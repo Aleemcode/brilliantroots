@@ -11,9 +11,9 @@ interface SectionProps {
 const bgMap = {
   default: "bg-br-bg",
   bg: "bg-br-bg",
-  white: "bg-white",
+  white: "bg-br-surface",
   "soft-blue": "bg-br-soft-blue",
-  warm: "bg-br-card",
+  warm: "bg-br-surface-strong",
   navy: "bg-br-navy",
   "soft-green": "bg-br-soft-green",
   muted: "bg-br-card",

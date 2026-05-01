@@ -14,6 +14,8 @@ const config: Config = {
         "br-primary-soft": "var(--color-primary-soft)",
         "br-secondary": "var(--color-secondary)",
         "br-bg": "var(--color-bg)",
+        "br-surface": "var(--color-surface)",
+        "br-surface-strong": "var(--color-surface-strong)",
         "br-card": "var(--color-card)",
         "br-text": "var(--color-text)",
         "br-muted": "var(--color-muted)",
@@ -26,6 +28,8 @@ const config: Config = {
         "br-green": "#1BC67F",
         "br-soft-blue": "#F0F5FF",
         "br-soft-green": "#E8F9F2",
+        "br-soft-orange": "#FFF0E8",
+        "br-soft-gold": "#FFF8D8",
       },
       fontFamily: {
         sans: ["var(--font-sora)", "system-ui", "sans-serif"],
