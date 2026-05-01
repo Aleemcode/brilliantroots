@@ -1,26 +1,106 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer base {
+  :root, [data-theme="navy"] {
+    --color-primary: #001F51;
+    --color-primary-dark: #000614;
+    --color-primary-soft: #E6EAF0;
+    --color-secondary: #3B86FE;
+    --color-bg: #FDFCF9; /* Warm parchment base */
+    --color-card: #F6F3EB;
+    --color-text: #001F51;
+    --color-muted: #5C6F84;
+    --color-border: #E8E4DB;
+  }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  [data-theme="blue"] {
+    --color-primary: #3B86FE;
+    --color-primary-dark: #172554;
+    --color-primary-soft: #EFF5FF;
+    --color-secondary: #001F51;
+    --color-bg: #FDFCF9;
+    --color-card: #F6F3EB;
+    --color-text: #001F51;
+    --color-muted: #5C6F84;
+    --color-border: #E8E4DB;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  [data-theme="green"] {
+    --color-primary: #1BC67F;
+    --color-primary-dark: #022c22;
+    --color-primary-soft: #E8F9F2;
+    --color-secondary: #001F51;
+    --color-bg: #FDFCF9;
+    --color-card: #F6F3EB;
+    --color-text: #052E1C; /* Deeper forest green text */
+    --color-muted: #4B6E5D;
+    --color-border: #E8E4DB;
+  }
+
+  [data-theme="orange"] {
+    --color-primary: #FB5707;
+    --color-primary-dark: #431407;
+    --color-primary-soft: #FFF0E8;
+    --color-secondary: #001F51;
+    --color-bg: #FDFCF9;
+    --color-card: #F6F3EB;
+    --color-text: #3D1500;
+    --color-muted: #825035;
+    --color-border: #E8E4DB;
+  }
+
+  /* Universal Dark Mode Overrides */
+  .dark {
+    --color-bg: #0B101E; /* Deep midnight */
+    --color-card: #131A2B;
+    --color-text: #F8FAFC;
+    --color-muted: #94A3B8;
+    --color-border: #1E293B;
+    --color-primary-soft: rgba(255,255,255,0.05);
+  }
+
+  /* Keep Theme Accents in Dark Mode */
+  .dark[data-theme="green"] {
+    --color-text: #E8F9F2;
+  }
+  .dark[data-theme="orange"] {
+    --color-text: #FFF0E8;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    background-color: theme('colors.br-bg');
+    color: theme('colors.br-text');
+    font-family: theme('fontFamily.sans');
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Texture Overlay */
+.bg-grain {
+  position: relative;
 }
+.bg-grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Arch Utilities */
+.arch-top {
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+

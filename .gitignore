@@ -24,6 +24,21 @@
 .DS_Store
 *.pem
 
+# local agent/editor tooling
+.agents/
+.aider-desk/
+.augment/
+.bob/
+.claude/
+.codeartsdoer/
+.codebuddy/
+.commandcode/
+.continue/
+.cortex/
+.crush/
+skills/
+skills-lock.json
+
 # debug
 npm-debug.log*
 yarn-debug.log*
