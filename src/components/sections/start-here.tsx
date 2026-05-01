@@ -1,6 +1,6 @@
 "use client";
 
-import { BookOpen, CalendarCheck, Compass } from "lucide-react";
+import { BookOpen, CalendarCheck, Compass, MonitorOff } from "lucide-react";
 import { Section } from "@/components/ui/section";
 import { Card, CardContent } from "@/components/ui/card";
 import { AnimateIn, StaggerContainer, StaggerItem } from "@/components/ui/animate";
@@ -8,24 +8,31 @@ import { AnimateIn, StaggerContainer, StaggerItem } from "@/components/ui/animat
 const pathways = [
   {
     icon: BookOpen,
-    title: "I need foundations",
-    description: "Start with parent-facing reminders and resources that clarify what tarbiyah is trying to build.",
-    action: "Read the weekly digest",
-    href: "#featured-resource",
+    title: "Foundations",
+    description: "For parents who need clarity before adding more tools, routines, or lessons.",
+    action: "Begin with purpose",
+    href: "#pathways",
   },
   {
     icon: CalendarCheck,
-    title: "I need family rhythm",
-    description: "Find tools that help the home practice small, repeatable acts of learning, remembrance, and adab.",
-    action: "Explore the tools",
-    href: "#products",
+    title: "Family Rhythm",
+    description: "For families trying to turn reminders, salah, adab, and conversations into repeatable practice.",
+    action: "Shape the rhythm",
+    href: "#pathways",
   },
   {
     icon: Compass,
-    title: "I need direction",
-    description: "See how the ecosystem fits together before choosing what your family should begin with.",
-    action: "View the method",
-    href: "#methodology",
+    title: "Names & Identity",
+    description: "For expecting or new parents who want naming, identity, and meaning to be deliberate.",
+    action: "Choose intentionally",
+    href: "#tools",
+  },
+  {
+    icon: MonitorOff,
+    title: "Screen-Free Learning",
+    description: "For parents replacing passive screen time with purposeful listening, reading, and guided tools.",
+    action: "Find the right tool",
+    href: "#tools",
   },
 ];
 
@@ -35,32 +42,32 @@ export function StartHere() {
       <div className="text-center mb-20">
         <AnimateIn>
           <p className="text-sm font-mono text-br-primary mb-4 tracking-tight uppercase">
-            — 02 START WHERE YOU ARE
+            — 02 START WITH INTENTION
           </p>
         </AnimateIn>
         <AnimateIn delay={0.1}>
           <h2 className="text-h2 text-br-text mb-6">
-            Every family enters from a different door.
+            What are you trying to nurture first?
           </h2>
         </AnimateIn>
         <AnimateIn delay={0.2}>
           <p className="text-body-lg text-br-muted max-w-2xl mx-auto">
-            Some parents need clarity, some need routine, and some need the right tool for a child 
-            who is ready to engage. Choose the door that matches today.
+            Do not begin with a product. Begin with the intention, then follow the pathway that 
+            fits the season your family is actually in.
           </p>
         </AnimateIn>
       </div>
 
-      <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+      <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
         {pathways.map((pathway) => (
           <StaggerItem key={pathway.title}>
             <a href={pathway.href} className="block h-full">
               <Card className="h-full group cursor-pointer hover:border-br-primary/35">
-                <CardContent className="p-10 flex flex-col h-full">
+                <CardContent className="p-7 flex flex-col h-full">
                   <div className="w-14 h-14 bg-br-primary-soft rounded-2xl flex items-center justify-center mb-6 border border-br-primary/10 transition-colors duration-300">
                     <pathway.icon className="w-7 h-7 text-br-primary" />
                   </div>
-                  <h3 className="text-h3 text-br-text mb-3">{pathway.title}</h3>
+                  <h3 className="text-xl font-bold text-br-text mb-3 tracking-tight">{pathway.title}</h3>
                   <p className="text-body text-br-muted mb-6 flex-1">
                     {pathway.description}
                   </p>

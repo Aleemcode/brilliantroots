@@ -17,9 +17,10 @@ The interface should feel like guided counsel, not a shop shouting for attention
    - Avoid overdecorated Islamic visual tropes.
    - Let trust come from structure, restraint, and useful detail.
 
-3. Guided, not generic
+3. Intentional, not generic
    - Every page should answer "Where am I, and what should I do next?"
    - Use pathways, staged content, and clear next actions.
+   - Products should only appear after their intention is clear.
 
 4. Authenticity before aesthetics
    - Methodology, sourcing, suitability, and boundaries should be visible.
@@ -31,26 +32,35 @@ The interface should feel like guided counsel, not a shop shouting for attention
 
 ## Information Architecture Model
 
-The site has four content layers:
+The site has five content layers:
 
 1. Orientation
    - What is brilliantroots?
    - Who is it for?
    - What problem does it solve?
 
-2. Guidance
-   - Parent journey
-   - Methodology
-   - Start-here pathways
-   - Routines and frameworks
+2. Intentional Pathways
+   - Foundations
+   - Family rhythm
+   - Names and identity
+   - Qur'an companion
+   - Adab and character
+   - Screen-free learning
 
-3. Ecosystem
-   - Products
-   - Resources
+3. Practice Library
+   - Method
+   - Digest
    - Guides
-   - Community
+   - Routines
+   - Downloads
 
-4. Conversion and continuity
+4. Tools
+   - Digital platforms
+   - Devices
+   - Books
+   - Systems
+
+5. Conversion and continuity
    - Product purchase/preorder
    - Digest signup
    - Community join
@@ -90,6 +100,20 @@ Entry paths:
 - I want to join the community.
 
 Pattern: diagnostic cards, not a quiz at first. Later this can become an interactive guided assessment.
+
+### Pathways
+
+Purpose: Turn a parent intention into a guided sequence.
+
+Each pathway should follow:
+
+- Intention: what the parent is trying to nurture.
+- Understand: the principle or method.
+- Practice: one household rhythm or prompt.
+- Equip: tools/resources that serve the intention.
+- Continue: next reminder, guide, or pathway.
+
+Pathways are the signature IA structure and the strongest expression of the brand's core value.
 
 ### Methodology
 
@@ -195,9 +219,10 @@ Content blocks:
 Primary navigation:
 
 - Start Here
-- Method
-- Products
-- Resources
+- Pathways
+- Tools
+- Library
+- About
 - Community
 
 Utility navigation:
@@ -286,4 +311,3 @@ Quantitative metrics later:
 - Start-here path click distribution.
 - Resource return visits.
 - Community join conversion.
-

@@ -6,6 +6,8 @@ Refined, rooted, quiet, intentional.
 
 brilliantroots should feel like a well-kept study, a family notebook, and a trusted teacher's counsel. It should not feel like a loud ecommerce shop, a generic SaaS landing page, or a children's cartoon app.
 
+Intentionality should be visible in the structure, not only in the copy. The user should feel that every card, route, CTA, and product is placed because it serves a purpose.
+
 ## What It Should Feel Like
 
 - Calm enough for an overwhelmed parent.
@@ -97,6 +99,9 @@ Copy should say:
 - "One faithful next step."
 - "Tools that serve the path."
 - "Parent clarity before product noise."
+- "Choose with intention."
+- "Follow the pathway."
+- "Begin with the purpose, then choose the tool."
 
 Copy should not say:
 
@@ -123,4 +128,3 @@ When unsure, choose the version that makes a sincere parent feel:
 2. More clear.
 3. More trusting.
 4. More able to take a small action.
-

@@ -19,24 +19,24 @@ export function FinalCTA() {
             </svg>
           </div>
           <h2 className="text-[2.5rem] md:text-[3.5rem] leading-[1.1] tracking-[-0.03em] font-bold text-white mb-6">
-            Take the next faithful step.
+            Choose the next intentional step.
           </h2>
         </AnimateIn>
 
         <AnimateIn delay={0.1}>
           <p className="text-xl md:text-2xl text-white/80 mb-8 max-w-2xl mx-auto font-serif italic leading-relaxed">
-            A strong home is not built in one dramatic moment. It grows through sincere intention, 
+            A strong home is not built by collecting more. It grows through sincere intention, 
             sound guidance, and small acts repeated by Allah&apos;s permission.
           </p>
         </AnimateIn>
 
         <AnimateIn delay={0.2}>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button variant="primary" size="lg" className="min-w-[200px]">
-              Start With the Digest
+            <Button asChild variant="primary" size="lg" className="min-w-[200px]">
+              <a href="#start-here">Start With Intention</a>
             </Button>
-            <Button variant="secondary" size="lg" className="min-w-[200px] border-white/20 bg-white/10 text-white hover:bg-white/15">
-              Explore the Ecosystem
+            <Button asChild variant="secondary" size="lg" className="min-w-[200px] border-white/20 bg-white/10 text-white hover:bg-white/15">
+              <a href="#pathways">Explore Pathways</a>
             </Button>
           </div>
         </AnimateIn>

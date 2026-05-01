@@ -6,7 +6,7 @@ import { AnimateIn } from "@/components/ui/animate";
 
 export function Hero() {
   const [typedText, setTypedText] = useState("");
-  const fullText = "a guided parent journey";
+  const fullText = "intentional tarbiyah";
 
   useEffect(() => {
     let currentText = "";
@@ -46,28 +46,27 @@ export function Hero() {
         {/* Massive Headline */}
         <AnimateIn delay={0.2}>
           <h1 className="text-[3rem] md:text-[4.5rem] lg:text-[5.5rem] leading-[1.05] tracking-[-0.04em] font-bold text-br-text mb-8 max-w-5xl mx-auto">
-            Raise your home with clarity.<br />
-            <span className="text-br-primary">One rooted step at a time.</span>
+            Choose tarbiyah with intention.<br />
+            <span className="text-br-primary">Then practice it at home.</span>
           </h1>
         </AnimateIn>
 
         {/* Subtitle */}
         <AnimateIn delay={0.3}>
           <p className="text-lg md:text-xl text-br-muted max-w-2xl mx-auto leading-relaxed mb-12">
-            brilliantroots helps Muslim parents move from scattered good intentions to a 
-            steady tarbiyah rhythm at home: learn what matters, practice it together, and 
-            choose tools that serve the journey.
+            brilliantroots helps Muslim families turn sincere concern into deliberate choices: 
+            clear pathways, household rhythms, and tools that serve a known purpose.
           </p>
         </AnimateIn>
 
         {/* CTA Buttons */}
         <AnimateIn delay={0.4}>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-            <Button variant="primary" size="lg" className="w-full sm:w-auto min-w-[200px]">
-              Find Your Starting Point
+            <Button asChild variant="primary" size="lg" className="w-full sm:w-auto min-w-[200px]">
+              <a href="#start-here">Start With Intention</a>
             </Button>
-            <Button variant="secondary" size="lg" className="w-full sm:w-auto min-w-[200px]">
-              See the Ecosystem
+            <Button asChild variant="secondary" size="lg" className="w-full sm:w-auto min-w-[200px]">
+              <a href="#pathways">Explore Pathways</a>
             </Button>
           </div>
         </AnimateIn>
@@ -79,7 +78,7 @@ export function Hero() {
             <span className="text-br-border hidden sm:block">·</span>
             <span>Understanding of the Salaf</span>
             <span className="text-br-border hidden sm:block">·</span>
-            <span>Practical Tarbiyah</span>
+            <span>Tools With Purpose</span>
           </div>
         </AnimateIn>
 

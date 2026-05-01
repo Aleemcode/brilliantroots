@@ -2,6 +2,14 @@ import Link from "next/link";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { Logo } from "@/components/ui/logo";
 
+const navLinks = [
+  { label: "Start Here", href: "#start-here" },
+  { label: "Pathways", href: "#pathways" },
+  { label: "Tools", href: "#tools" },
+  { label: "Library", href: "#library" },
+  { label: "About", href: "#method" },
+];
+
 export function Navigation() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-br-bg/90 backdrop-blur-xl border-b border-br-border/10">
@@ -15,15 +23,13 @@ export function Navigation() {
             />
           </Link>
 
-          {/* Right Area: Minimal Links & Theme Toggle */}
           <div className="flex items-center gap-6">
-            <div className="hidden md:flex items-center gap-6 text-sm font-medium text-br-muted font-mono tracking-tight">
-              <a href="#start" className="hover:text-br-text transition-colors flex items-center gap-1">
-                Start Here <span className="text-br-primary">→</span>
-              </a>
-              <a href="#login" className="hover:text-br-text transition-colors">
-                Login
-              </a>
+            <div className="hidden lg:flex items-center gap-5 text-sm font-medium text-br-muted font-mono tracking-tight">
+              {navLinks.map((link) => (
+                <a key={link.href} href={link.href} className="hover:text-br-text transition-colors">
+                  {link.label}
+                </a>
+              ))}
             </div>
             
             <ThemeToggle />

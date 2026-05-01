@@ -11,7 +11,7 @@ const products: Product[] = [
   {
     id: "baytul-asmaa",
     title: "Baytul Asmaa",
-    subtitle: "Curated Name Selection",
+    subtitle: "Names & Identity Pathway",
     description: "A digital platform designed to help Muslim families choose intentional, historically grounded names for their children. We prioritize deep, qualitative context over sheer volume.",
     image: "/baytul-asmaa-platform.png", 
     features: ["Audio pronunciations", "Scholar-verified meanings", "Historical contexts"],
@@ -21,7 +21,7 @@ const products: Product[] = [
   {
     id: "mqcd",
     title: "My Qur'an Companion Device",
-    subtitle: "Portable Audio Player",
+    subtitle: "Qur'an Companion Pathway",
     description: "A safe, screen-restricted alternative to mobile devices. Designed to support your child's memorization at home or school with long-lasting battery and high-quality sound.",
     image: "/mqcd-device.png", 
     features: [
@@ -37,7 +37,7 @@ const products: Product[] = [
   {
     id: "tarbiyah-corner",
     title: "Tarbiyah Corner Library",
-    subtitle: "Foundational Reading",
+    subtitle: "Foundations Pathway",
     description: "The first published book under the Tarbiyah Corner imprint, focusing on the essential virtues of a Murabbi. Designed to equip parents with the knowledge they need.",
     image: "/tarbiyah-corner-book.png", // Using the generated faceless illustration
     features: ["Practical frameworks", "Authentic sources", "Beautiful faceless illustrations"],
@@ -50,28 +50,28 @@ export function ProductsGrid() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
   return (
-    <Section id="products" background="muted">
+    <Section id="tools" background="muted">
       <div className="mx-auto max-w-6xl px-6 sm:px-8 lg:px-12 py-24 border-t border-br-border/50">
         
         {/* Header Area */}
         <div className="mb-16 max-w-3xl">
           <AnimateIn>
             <div className="flex items-center gap-2 mb-6 text-sm font-mono tracking-tight text-br-primary uppercase">
-              <span>— 03 THE ECOSYSTEM</span>
+              <span>— 03 TOOLS WITH PURPOSE</span>
             </div>
           </AnimateIn>
           
           <AnimateIn delay={0.1}>
             <h2 className="text-[2.5rem] md:text-[3.5rem] leading-[1.1] tracking-[-0.03em] font-bold text-br-text mb-6">
-              Tools that serve the path.<br />
+              Choose the tool after the intention.<br />
               <span className="text-br-primary">Not products in isolation.</span>
             </h2>
           </AnimateIn>
 
           <AnimateIn delay={0.2}>
             <p className="text-lg text-br-muted leading-relaxed max-w-2xl">
-              Each resource answers a different parent need: choosing with intention, supporting 
-              memorization without screens, and giving parents language for their role as murabbis.
+              Each tool belongs to a pathway: naming with meaning, supporting Qur&apos;an memorization 
+              without passive screens, or equipping the parent before the child.
             </p>
           </AnimateIn>
         </div>

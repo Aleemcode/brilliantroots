@@ -2,29 +2,29 @@ import { Heart } from "lucide-react";
 import { Logo } from "@/components/ui/logo";
 
 const footerLinks = {
-  "Start Here": [
-    { label: "Learn", href: "#" },
-    { label: "Practice", href: "#" },
-    { label: "Grow", href: "#" },
-    { label: "Parent Guides", href: "#" },
+  Start: [
+    { label: "Start Here", href: "#start-here" },
+    { label: "Pathways", href: "#pathways" },
+    { label: "The Method", href: "#method" },
+    { label: "Jumuʿah Digest", href: "#library" },
   ],
-  "Tarbiyah Systems": [
-    { label: "Adhkār System", href: "#" },
-    { label: "Ṣalāh System", href: "#" },
-    { label: "Ādāb System", href: "#" },
-    { label: "ʿAqīdah System", href: "#" },
+  Pathways: [
+    { label: "Foundations", href: "#pathways" },
+    { label: "Family Rhythm", href: "#pathways" },
+    { label: "Names & Identity", href: "#pathways" },
+    { label: "Screen-Free Learning", href: "#pathways" },
   ],
-  Resources: [
-    { label: "Jumuʿah Digest", href: "#" },
-    { label: "Daily Routines", href: "#" },
-    { label: "Teaching Prompts", href: "#" },
-    { label: "Free Downloads", href: "#" },
+  Tools: [
+    { label: "Baytul Asmaa", href: "#tools" },
+    { label: "Qur'an Companion", href: "#tools" },
+    { label: "Tarbiyah Corner", href: "#tools" },
+    { label: "Tool Finder", href: "#tools" },
   ],
-  Community: [
-    { label: "WhatsApp Group", href: "#" },
-    { label: "Telegram Channel", href: "#" },
-    { label: "About Us", href: "#" },
-    { label: "Contact", href: "#" },
+  Trust: [
+    { label: "About", href: "#method" },
+    { label: "Trust & Review", href: "#method" },
+    { label: "Community", href: "#library" },
+    { label: "Contact", href: "#library" },
   ],
 };
 
@@ -38,7 +38,7 @@ export function Footer() {
           <div className="lg:col-span-1 space-y-6">
             <Logo variant="horizontal" className="h-7 w-auto text-white" />
             <p className="text-sm text-white/70 leading-relaxed max-w-xs">
-              Structured tarbiyah tools for Muslim families. Rooted in Qurʾān and Sunnah, upon the understanding of the Salaf.
+              Intentional tarbiyah pathways, tools, and reminders for Muslim families. Rooted in Qurʾān and Sunnah, upon the understanding of the Salaf.
             </p>
           </div>
 

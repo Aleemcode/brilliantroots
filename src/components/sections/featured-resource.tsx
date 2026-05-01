@@ -8,7 +8,7 @@ import { AnimateIn } from "@/components/ui/animate";
 
 export function FeaturedResource() {
   return (
-    <Section id="featured-resource" background="warm">
+    <Section id="library" background="warm">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
         {/* Visual */}
         <AnimateIn direction="left">
@@ -27,31 +27,31 @@ export function FeaturedResource() {
         <div>
           <AnimateIn delay={0.1}>
             <div className="flex items-center gap-2 mb-4">
-              <Badge variant="free">Free Resource</Badge>
+              <Badge variant="free">Library</Badge>
               <Badge variant="new">Weekly</Badge>
             </div>
           </AnimateIn>
 
           <AnimateIn delay={0.2}>
             <h2 className="text-h2 text-br-text mb-6">
-              Begin with one weekly reminder.
+              Keep intention alive through the week.
             </h2>
           </AnimateIn>
 
           <AnimateIn delay={0.3}>
             <p className="text-body-lg text-br-muted mb-8">
-              Jumuʿah Digest is the soft starting point: a short weekly note with beneficial 
-              reminders, practical tarbiyah prompts, and one family action to carry into the week.
+              Jumuʿah Digest is the first library rhythm: a short weekly note with beneficial 
+              reminders, practical tarbiyah prompts, and one intentional family action.
             </p>
           </AnimateIn>
 
           <AnimateIn delay={0.35}>
             <ul className="space-y-4 mb-10">
               {[
-                "A focused reminder for the parent",
+                "A focused intention for the parent",
                 "One household practice to try",
                 "A child-friendly conversation prompt",
-                "A clear next step into the brilliantroots ecosystem",
+                "A clear next step into the right pathway",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm text-br-text">
                   <span className="w-5 h-5 bg-br-primary-soft rounded-full flex items-center justify-center shrink-0 mt-0.5 border border-br-primary/10">
