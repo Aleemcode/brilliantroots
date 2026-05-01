@@ -66,7 +66,7 @@ export function TarbiyahJourney() {
         <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {steps.map((step) => (
             <StaggerItem key={step.id}>
-              <div className="group relative bg-br-card rounded-2xl p-8 border border-br-border hover:border-br-primary/50 transition-colors duration-300 h-full flex flex-col shadow-sm">
+              <div className="group relative bg-br-card rounded-2xl p-8 border border-br-border hover:border-br-primary/35 transition-colors duration-300 h-full flex flex-col shadow-sm dark:shadow-none">
                 
                 {/* Top Row: Number & Icon */}
                 <div className="flex items-center justify-between mb-8">

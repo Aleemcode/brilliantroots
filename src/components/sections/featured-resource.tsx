@@ -33,7 +33,7 @@ export function FeaturedResource() {
           </AnimateIn>
 
           <AnimateIn delay={0.2}>
-            <h2 className="text-h2 text-br-navy mb-6">
+            <h2 className="text-h2 text-br-text mb-6">
               Begin with one weekly reminder.
             </h2>
           </AnimateIn>
@@ -54,8 +54,8 @@ export function FeaturedResource() {
                 "A clear next step into the brilliantroots ecosystem",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm text-br-text">
-                  <span className="w-5 h-5 bg-br-soft-green rounded-full flex items-center justify-center shrink-0 mt-0.5">
-                    <span className="text-br-green text-xs font-bold">✓</span>
+                  <span className="w-5 h-5 bg-br-primary-soft rounded-full flex items-center justify-center shrink-0 mt-0.5 border border-br-primary/10">
+                    <span className="text-br-primary text-xs font-bold">✓</span>
                   </span>
                   {item}
                 </li>

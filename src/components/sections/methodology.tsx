@@ -36,7 +36,7 @@ export function Methodology() {
           
           {/* Left Column: Typical Store */}
           <AnimateIn delay={0.3}>
-            <div className="h-full bg-br-card rounded-2xl p-8 border border-br-border shadow-sm">
+            <div className="h-full bg-br-card rounded-2xl p-8 border border-br-border shadow-sm dark:shadow-none">
               <div className="mb-8">
                 <span className="font-mono text-xs tracking-tight text-br-muted uppercase">
                   {"// WHAT OFTEN HAPPENS"}
@@ -61,7 +61,7 @@ export function Methodology() {
 
           {/* Right Column: Brilliantroots */}
           <AnimateIn delay={0.4}>
-            <div className="h-full bg-br-primary-soft/30 rounded-2xl p-8 border border-br-primary/30 shadow-sm">
+            <div className="h-full bg-br-primary-soft rounded-2xl p-8 border border-br-primary/20 shadow-sm dark:shadow-none">
               <div className="mb-8">
                 <span className="font-mono text-xs tracking-tight text-br-primary uppercase">
                   {"// THE GUIDED JOURNEY"}
@@ -75,7 +75,7 @@ export function Methodology() {
                   "Choose tools that match a real stage in the journey",
                   "Return often to Qur'an, Sunnah, and the understanding of the Salaf"
                 ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-4 text-br-navy dark:text-br-text font-medium">
+                  <li key={i} className="flex items-start gap-4 text-br-text font-medium">
                     <span className="text-br-primary font-mono mt-0.5">→</span>
                     <span className="leading-tight">{item}</span>
                   </li>

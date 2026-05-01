@@ -12,8 +12,6 @@ const pathways = [
     description: "Start with parent-facing reminders and resources that clarify what tarbiyah is trying to build.",
     action: "Read the weekly digest",
     href: "#featured-resource",
-    color: "text-br-blue",
-    bg: "bg-br-soft-blue",
   },
   {
     icon: CalendarCheck,
@@ -21,8 +19,6 @@ const pathways = [
     description: "Find tools that help the home practice small, repeatable acts of learning, remembrance, and adab.",
     action: "Explore the tools",
     href: "#products",
-    color: "text-br-green",
-    bg: "bg-br-soft-green",
   },
   {
     icon: Compass,
@@ -30,8 +26,6 @@ const pathways = [
     description: "See how the ecosystem fits together before choosing what your family should begin with.",
     action: "View the method",
     href: "#methodology",
-    color: "text-br-orange",
-    bg: "bg-br-primary-soft",
   },
 ];
 
@@ -45,7 +39,7 @@ export function StartHere() {
           </p>
         </AnimateIn>
         <AnimateIn delay={0.1}>
-          <h2 className="text-h2 text-br-navy mb-6">
+          <h2 className="text-h2 text-br-text mb-6">
             Every family enters from a different door.
           </h2>
         </AnimateIn>
@@ -61,20 +55,16 @@ export function StartHere() {
         {pathways.map((pathway) => (
           <StaggerItem key={pathway.title}>
             <a href={pathway.href} className="block h-full">
-              <Card className="h-full group cursor-pointer">
+              <Card className="h-full group cursor-pointer hover:border-br-primary/35">
                 <CardContent className="p-10 flex flex-col h-full">
-                  <div
-                    className={`w-14 h-14 ${pathway.bg} rounded-2xl flex items-center justify-center mb-6`}
-                  >
-                    <pathway.icon className={`w-7 h-7 ${pathway.color}`} />
+                  <div className="w-14 h-14 bg-br-primary-soft rounded-2xl flex items-center justify-center mb-6 border border-br-primary/10 transition-colors duration-300">
+                    <pathway.icon className="w-7 h-7 text-br-primary" />
                   </div>
-                  <h3 className="text-h3 text-br-navy mb-3">{pathway.title}</h3>
+                  <h3 className="text-h3 text-br-text mb-3">{pathway.title}</h3>
                   <p className="text-body text-br-muted mb-6 flex-1">
                     {pathway.description}
                   </p>
-                  <span
-                    className={`text-sm font-semibold ${pathway.color} group-hover:underline underline-offset-4`}
-                  >
+                  <span className="text-sm font-semibold text-br-primary group-hover:underline underline-offset-4">
                     {pathway.action} →
                   </span>
                 </CardContent>

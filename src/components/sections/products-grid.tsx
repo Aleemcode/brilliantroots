@@ -82,7 +82,7 @@ export function ProductsGrid() {
             <StaggerItem key={product.id}>
               <div 
                 onClick={() => setSelectedProduct(product)}
-                className="group cursor-pointer bg-br-card rounded-2xl overflow-hidden border border-br-border hover:border-br-primary/50 transition-all duration-300 h-full flex flex-col shadow-sm hover:shadow-md"
+                className="group cursor-pointer bg-br-card rounded-2xl overflow-hidden border border-br-border hover:border-br-primary/35 transition-all duration-300 h-full flex flex-col shadow-sm hover:shadow-md dark:shadow-none"
               >
                 {/* Image Container */}
                 <div className="aspect-[4/3] w-full bg-br-muted/10 overflow-hidden relative">

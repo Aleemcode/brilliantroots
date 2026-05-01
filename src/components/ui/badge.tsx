@@ -7,12 +7,12 @@ const badgeVariants = cva(
   {
     variants: {
       variant: {
-        age: "bg-br-soft-green text-br-navy",
-        free: "bg-br-soft-blue text-br-blue",
-        new: "bg-br-soft-orange text-br-orange",
-        parentGuide: "bg-br-soft-gold text-br-navy",
-        system: "bg-br-soft-blue text-br-navy",
-        paid: "bg-br-navy text-white",
+        age: "bg-br-primary-soft text-br-primary",
+        free: "bg-br-primary-soft text-br-primary",
+        new: "bg-br-surface border border-br-primary/15 text-br-primary",
+        parentGuide: "bg-br-primary-soft text-br-primary",
+        system: "bg-br-primary-soft text-br-primary",
+        paid: "bg-br-primary text-white",
       },
     },
     defaultVariants: {
