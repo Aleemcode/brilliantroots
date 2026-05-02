@@ -1,30 +1,31 @@
 import { Heart } from "lucide-react";
+import Link from "next/link";
 import { Logo } from "@/components/ui/logo";
 
 const footerLinks = {
   Start: [
-    { label: "Start Here", href: "#start-here" },
-    { label: "Pathways", href: "#pathways" },
-    { label: "The Method", href: "#method" },
-    { label: "Jumuʿah Digest", href: "#library" },
+    { label: "Start Here", href: "/start-here" },
+    { label: "Pathways", href: "/pathways" },
+    { label: "The Method", href: "/library/method" },
+    { label: "Jumuʿah Digest", href: "/library/jumuah-digest" },
   ],
   Pathways: [
-    { label: "Foundations", href: "#pathways" },
-    { label: "Family Rhythm", href: "#pathways" },
-    { label: "Names & Identity", href: "#pathways" },
-    { label: "Screen-Free Learning", href: "#pathways" },
+    { label: "Foundations", href: "/pathways/foundations" },
+    { label: "Family Rhythm", href: "/pathways/family-rhythm" },
+    { label: "Names & Identity", href: "/pathways/names-and-identity" },
+    { label: "Screen-Free Learning", href: "/pathways/screen-free-learning" },
   ],
   Tools: [
-    { label: "Baytul Asmaa", href: "#tools" },
-    { label: "Qur'an Companion", href: "#tools" },
-    { label: "Tarbiyah Corner", href: "#tools" },
-    { label: "Tool Finder", href: "#tools" },
+    { label: "Baytul Asmaa", href: "/tools/baytul-asmaa" },
+    { label: "Qur'an Companion", href: "/tools/quran-companion-device" },
+    { label: "Tarbiyah Corner", href: "/tools/tarbiyah-corner-library" },
+    { label: "Tool Finder", href: "/tools" },
   ],
   Trust: [
-    { label: "About", href: "#method" },
-    { label: "Trust & Review", href: "#method" },
-    { label: "Community", href: "#library" },
-    { label: "Contact", href: "#library" },
+    { label: "About", href: "/about" },
+    { label: "Trust & Review", href: "/about" },
+    { label: "Library", href: "/library" },
+    { label: "Contact", href: "/contact" },
   ],
 };
 
@@ -51,12 +52,12 @@ export function Footer() {
               <ul className="space-y-3">
                 {links.map((link) => (
                   <li key={link.label}>
-                    <a
+                    <Link
                       href={link.href}
                       className="text-sm text-white/60 hover:text-white transition-colors duration-200"
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

@@ -1,5 +1,4 @@
-import { Navigation } from "@/components/navigation";
-import { Footer } from "@/components/footer";
+import { SiteFrame } from "@/components/site-frame";
 import { Hero } from "@/components/sections/hero";
 import { TarbiyahJourney } from "@/components/sections/tarbiyah-journey";
 import { StartHere } from "@/components/sections/start-here";
@@ -10,9 +9,7 @@ import { FinalCTA } from "@/components/sections/final-cta";
 
 export default function Home() {
   return (
-    <>
-      <Navigation />
-      <main className="flex-1">
+    <SiteFrame>
         <Hero />
         <TarbiyahJourney />
         <StartHere />
@@ -20,8 +17,6 @@ export default function Home() {
         <Methodology />
         <FeaturedResource />
         <FinalCTA />
-      </main>
-      <Footer />
-    </>
+    </SiteFrame>
   );
 }

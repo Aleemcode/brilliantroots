@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { AnimateIn } from "@/components/ui/animate";
 
@@ -33,10 +34,10 @@ export function FinalCTA() {
         <AnimateIn delay={0.2}>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button asChild variant="primary" size="lg" className="min-w-[200px]">
-              <a href="#start-here">Start With Intention</a>
+              <Link href="/start-here">Start With Intention</Link>
             </Button>
             <Button asChild variant="secondary" size="lg" className="min-w-[200px] border-white/20 bg-white/10 text-white hover:bg-white/15">
-              <a href="#pathways">Explore Pathways</a>
+              <Link href="/pathways">Explore Pathways</Link>
             </Button>
           </div>
         </AnimateIn>

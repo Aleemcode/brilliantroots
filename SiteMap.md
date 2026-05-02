@@ -40,19 +40,34 @@ Why this is stronger:
 - `About` absorbs trust, mission, sourcing, and contact.
 - `Community` can be a strong CTA without crowding the main IA.
 
-## Current Site
+## Implemented Site
 
 ```mermaid
 flowchart TD
   Home["Home /"]
-  Home --> Hero["Hero"]
-  Home --> Journey["Parent Journey"]
-  Home --> StartHereSection["Start Where You Are"]
-  Home --> ToolsPreview["Tools Preview"]
-  Home --> MethodPreview["Method & Trust Preview"]
-  Home --> DigestPreview["Featured Digest"]
-  Home --> FinalCTA["Final CTA"]
+  Home --> StartHere["/start-here Start Here"]
+  Home --> Pathways["/pathways Pathways"]
+  Home --> Tools["/tools Tools"]
+  Home --> Library["/library Library"]
+  Home --> About["/about About"]
+
+  Pathways --> Foundations["/pathways/foundations"]
+  Pathways --> Rhythm["/pathways/family-rhythm"]
+  Pathways --> Names["/pathways/names-and-identity"]
+  Pathways --> Quran["/pathways/quran-companion"]
+  Pathways --> Adab["/pathways/adab-and-character"]
+  Pathways --> Screens["/pathways/screen-free-learning"]
+
+  Tools --> Baytul["/tools/baytul-asmaa"]
+  Tools --> Device["/tools/quran-companion-device"]
+  Tools --> Corner["/tools/tarbiyah-corner-library"]
+
+  Library --> Digest["/library/jumuah-digest"]
+  Library --> Method["/library/method"]
+  About --> Contact["/contact"]
 ```
+
+The home page now acts as orientation and routing. It still previews the ecosystem, but primary navigation, footer links, CTAs, product modal CTAs, and pathway cards now resolve to real pages instead of hash anchors.
 
 ## Proposed Site Architecture
 

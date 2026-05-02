@@ -15,8 +15,8 @@ const products: Product[] = [
     description: "A digital platform designed to help Muslim families choose intentional, historically grounded names for their children. We prioritize deep, qualitative context over sheer volume.",
     image: "/baytul-asmaa-platform.png", 
     features: ["Audio pronunciations", "Scholar-verified meanings", "Historical contexts"],
-    linkText: "Enter Platform",
-    linkHref: "#"
+    linkText: "Open Product Page",
+    linkHref: "/tools/baytul-asmaa"
   },
   {
     id: "mqcd",
@@ -31,8 +31,8 @@ const products: Product[] = [
       "Bluetooth Enabled for easy connection",
       "Simple, child-friendly design for independent use"
     ],
-    linkText: "Pre-order Device",
-    linkHref: "#"
+    linkText: "Open Product Page",
+    linkHref: "/tools/quran-companion-device"
   },
   {
     id: "tarbiyah-corner",
@@ -41,8 +41,8 @@ const products: Product[] = [
     description: "The first published book under the Tarbiyah Corner imprint, focusing on the essential virtues of a Murabbi. Designed to equip parents with the knowledge they need.",
     image: "/tarbiyah-corner-book.png", // Using the generated faceless illustration
     features: ["Practical frameworks", "Authentic sources", "Beautiful faceless illustrations"],
-    linkText: "Get the Book",
-    linkHref: "#"
+    linkText: "Open Product Page",
+    linkHref: "/tools/tarbiyah-corner-library"
   }
 ];
 

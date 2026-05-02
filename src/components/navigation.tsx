@@ -1,14 +1,7 @@
 import Link from "next/link";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { Logo } from "@/components/ui/logo";
-
-const navLinks = [
-  { label: "Start Here", href: "#start-here" },
-  { label: "Pathways", href: "#pathways" },
-  { label: "Tools", href: "#tools" },
-  { label: "Library", href: "#library" },
-  { label: "About", href: "#method" },
-];
+import { mainNav } from "@/lib/site-content";
 
 export function Navigation() {
   return (
@@ -25,15 +18,22 @@ export function Navigation() {
 
           <div className="flex items-center gap-6">
             <div className="hidden lg:flex items-center gap-5 text-sm font-medium text-br-muted font-mono tracking-tight">
-              {navLinks.map((link) => (
-                <a key={link.href} href={link.href} className="hover:text-br-text transition-colors">
+              {mainNav.map((link) => (
+                <Link key={link.href} href={link.href} className="hover:text-br-text transition-colors">
                   {link.label}
-                </a>
+                </Link>
               ))}
             </div>
             
             <ThemeToggle />
           </div>
+        </div>
+        <div className="flex gap-4 overflow-x-auto border-t border-br-border/20 py-3 text-xs font-medium text-br-muted lg:hidden">
+          {mainNav.map((link) => (
+            <Link key={link.href} href={link.href} className="shrink-0 hover:text-br-text transition-colors">
+              {link.label}
+            </Link>
+          ))}
         </div>
       </nav>
     </header>

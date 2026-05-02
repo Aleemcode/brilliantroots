@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -108,8 +109,10 @@ export function ProductSlideover({ product, isOpen, onClose }: ProductSlideoverP
 
             {/* Footer / CTA */}
             <div className="p-6 border-t border-br-border/50 bg-br-card">
-              <Button variant="primary" className="w-full" size="lg">
-                {product.linkText}
+              <Button asChild variant="primary" className="w-full" size="lg">
+                <Link href={product.linkHref}>
+                  {product.linkText}
+                </Link>
               </Button>
             </div>
           </motion.div>

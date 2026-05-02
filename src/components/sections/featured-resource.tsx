@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { Section } from "@/components/ui/section";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -64,8 +65,10 @@ export function FeaturedResource() {
           </AnimateIn>
 
           <AnimateIn delay={0.4}>
-            <Button variant="primary" size="lg">
-              Subscribe Free
+            <Button asChild variant="primary" size="lg">
+              <Link href="/library/jumuah-digest">
+                Open Jumu&apos;ah Digest
+              </Link>
             </Button>
           </AnimateIn>
         </div>

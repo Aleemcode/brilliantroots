@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { AnimateIn } from "@/components/ui/animate";
 
@@ -63,10 +64,10 @@ export function Hero() {
         <AnimateIn delay={0.4}>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
             <Button asChild variant="primary" size="lg" className="w-full sm:w-auto min-w-[200px]">
-              <a href="#start-here">Start With Intention</a>
+              <Link href="/start-here">Start With Intention</Link>
             </Button>
             <Button asChild variant="secondary" size="lg" className="w-full sm:w-auto min-w-[200px]">
-              <a href="#pathways">Explore Pathways</a>
+              <Link href="/pathways">Explore Pathways</Link>
             </Button>
           </div>
         </AnimateIn>
