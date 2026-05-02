@@ -16,7 +16,7 @@ const footerLinks = {
     { label: "Screen-Free Learning", href: "/pathways/screen-free-learning" },
   ],
   Tools: [
-    { label: "Baytul Asmaa", href: "/tools/baytul-asmaa" },
+    { label: "Baytul Asmaa", href: "https://baytul-asmaa.com/" },
     { label: "Qur'an Companion", href: "/tools/quran-companion-device" },
     { label: "Tarbiyah Corner", href: "/tools/tarbiyah-corner-library" },
     { label: "Tool Finder", href: "/tools" },

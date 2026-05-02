@@ -115,9 +115,9 @@ export const pathways = [
     practice: "Discuss the meaning, pronunciation, and family hopes attached to a shortlisted name.",
     tool: "Baytul Asmaa supports intentional name discovery and family reflection.",
     href: "/pathways/names-and-identity",
-    recommendedToolHref: "/tools/baytul-asmaa",
+    recommendedToolHref: "https://baytul-asmaa.com/",
     recommendedTool: "Baytul Asmaa",
-    nextStepHref: "/tools/baytul-asmaa",
+    nextStepHref: "https://baytul-asmaa.com/",
     nextStep: "Explore the tool",
   },
   {
@@ -188,6 +188,7 @@ export const tools = [
     subtitle: "Names & Identity Tool",
     purpose: "Help expecting and new parents choose names with meaning, confidence, pronunciation, and family reflection.",
     bestFor: "Expecting parents, new parents, and families revisiting identity conversations.",
+    websiteHref: "https://baytul-asmaa.com/",
     pathwayHref: "/pathways/names-and-identity",
     pathway: "Names & Identity Pathway",
     details: [
@@ -202,6 +203,7 @@ export const tools = [
     subtitle: "Screen-Light Qur'an Support",
     purpose: "Support listening, repetition, and memorization rhythms without turning Qur'an practice into more screen time.",
     bestFor: "Young children, memorization support, bedtime listening, and family review routines.",
+    websiteHref: "",
     pathwayHref: "/pathways/quran-companion",
     pathway: "Qur'an Companion Pathway",
     details: [
@@ -216,6 +218,7 @@ export const tools = [
     subtitle: "Parent Guidance & Family Prompts",
     purpose: "Give parents grounded notes, prompts, and practical teaching support for recurring tarbiyah themes.",
     bestFor: "Parents who want a calmer way to teach foundations, adab, and family practice.",
+    websiteHref: "",
     pathwayHref: "/pathways/foundations",
     pathway: "Foundations Pathway",
     details: [
@@ -230,6 +233,7 @@ export const tools = [
   subtitle: string;
   purpose: string;
   bestFor: string;
+  websiteHref: string;
   pathwayHref: string;
   pathway: string;
   details: string[];

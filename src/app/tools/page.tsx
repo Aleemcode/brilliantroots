@@ -28,7 +28,7 @@ export default function ToolsPage() {
                 key={tool.slug}
                 title={tool.title}
                 body={tool.purpose}
-                href={`/tools/${tool.slug}`}
+                href={tool.websiteHref || `/tools/${tool.slug}`}
                 meta={tool.subtitle}
                 label="View tool"
               />

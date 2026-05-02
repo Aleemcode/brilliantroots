@@ -16,7 +16,7 @@ const products: Product[] = [
     image: "/baytul-asmaa-platform.png", 
     features: ["Audio pronunciations", "Scholar-verified meanings", "Historical contexts"],
     linkText: "Open Product Page",
-    linkHref: "/tools/baytul-asmaa"
+    linkHref: "https://baytul-asmaa.com/"
   },
   {
     id: "mqcd",

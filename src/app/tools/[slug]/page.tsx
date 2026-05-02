@@ -36,7 +36,11 @@ export default async function ToolDetailPage({ params }: ToolPageProps) {
         eyebrow={tool.subtitle}
         title={tool.title}
         body={tool.purpose}
-        primary={{ label: `Open ${tool.pathway}`, href: tool.pathwayHref }}
+        primary={
+          tool.websiteHref
+            ? { label: `Visit ${tool.title}`, href: tool.websiteHref }
+            : { label: `Open ${tool.pathway}`, href: tool.pathwayHref }
+        }
         secondary={{ label: "All tools", href: "/tools" }}
       />
 
