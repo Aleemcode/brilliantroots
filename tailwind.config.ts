@@ -26,6 +26,7 @@ const config: Config = {
         "br-navy": "#001F51",
         "br-orange": "#FB5707",
         "br-green": "#1BC67F",
+        "br-gold": "#FFCB66",
         "br-soft-blue": "#F0F5FF",
         "br-soft-green": "#E8F9F2",
         "br-soft-orange": "#FFF0E8",

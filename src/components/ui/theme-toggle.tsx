@@ -10,6 +10,7 @@ const themes = [
   { id: "blue", color: "#3B86FE", label: "River" },
   { id: "green", color: "#1BC67F", label: "Forest" },
   { id: "orange", color: "#FB5707", label: "Terracotta" },
+  { id: "gold", color: "#FFCB66", label: "Gold" },
 ];
 
 const themeChangeEvent = "br-theme-change";

@@ -59,6 +59,20 @@
     --color-border: #F1D8C5;
   }
 
+  [data-theme="gold"] {
+    --color-primary: #FFCB66;
+    --color-primary-dark: #3A2700;
+    --color-primary-soft: #FFF6DF;
+    --color-secondary: #001F51;
+    --color-bg: #FFFCF4;
+    --color-surface: #FFFDF8;
+    --color-surface-strong: #FFF6DF;
+    --color-card: #F8F0DF;
+    --color-text: #332100;
+    --color-muted: #765D2A;
+    --color-border: #EFDCA9;
+  }
+
   .dark {
     --color-bg: #0B0F1A;
     --color-surface: #101624;
@@ -82,6 +96,12 @@
     --color-surface-strong: #32190F;
     --color-card: #241A16;
     --color-primary-soft: rgba(251, 87, 7, 0.12);
+  }
+  .dark[data-theme="gold"] {
+    --color-text: #FFF8E6;
+    --color-surface-strong: #2B210F;
+    --color-card: #241D12;
+    --color-primary-soft: rgba(255, 203, 102, 0.14);
   }
   .dark[data-theme="blue"] {
     --color-surface-strong: #102341;
