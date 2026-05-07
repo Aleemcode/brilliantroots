@@ -40,10 +40,10 @@ export default function PathwaysPage() {
       </section>
 
       <CTASection
-        title="Tools come after the pathway."
-        body="This keeps brilliantroots from feeling like a shop first. The parent understands the purpose before choosing support."
-        href="/tools"
-        label="Explore tools"
+        title="Explore comes after the pathway."
+        body="This keeps brilliantroots from feeling like a shop first. The parent understands the purpose before choosing a product, tool, work, or guide."
+        href="/explore"
+        label="Open Explore"
       />
     </SiteFrame>
   );

@@ -4,11 +4,15 @@ Single source of truth for brilliantroots website copy.
 
 ## Copy Direction
 
-brilliantroots is a product-led Islamic family brand with three connected layers:
+brilliantroots is a product-led Islamic family brand with one public discovery layer:
+
+- **Explore:** the home for physical products, digital tools, published works, free guides, parental kits, and author resources.
+
+Internally, Explore can still be organized by type:
 
 - **Products:** physical tools and family learning materials for Muslim homes.
 - **Tools:** digital/support tools that aid parenting upon correct manhaj and tarbiyah.
-- **Store:** curated Muslim intellectual work, including paid works, free guides, parental kits, and author-led resources.
+- **Published Works:** curated Muslim intellectual work, including paid works, free guides, parental kits, and author-led resources.
 
 Primary audience:
 
@@ -34,10 +38,8 @@ Voice:
 Primary navigation:
 
 - Home
-- Products
+- Explore
 - Pathway
-- Store
-- Tools
 - About Us
 - Contact Us
 
@@ -49,35 +51,34 @@ Utility navigation:
 
 Footer column suggestions:
 
-**Shop**
+**Explore**
+
+- Catalogue
+- Products
+- Published Works
+- Free Guides
+
+**Products**
 
 - MQCD
 - Tarbiyah Pack
-- Madrasah Backing Bag
 - Modern Qur'an Stand
-- Customized Bookmark
+- Baytul Asmaa
 
-**Learn**
+**Pathway**
 
-- Pathway
+- Foundations
+- Family Rhythm
+- Names & Identity
+- Screen-Free Learning
 - Prospective Spouse Guides
-- Family Clarity Guides
-- Eeman Growth Notes
-
-**Store**
-
-- Published Works
-- Free Guides
-- Paid Books
-- Parental Kits
-- Author Resources
 
 **brilliantroots**
 
 - About Us
 - Contact Us
-- Tools
 - Publishing Inquiries
+- Jumu'ah Digest
 
 Footer brand copy:
 
@@ -89,12 +90,79 @@ Footer CTA:
 
 Footer CTA buttons:
 
-- Explore Products
+- Explore the Catalogue
 - Read Pathway Guides
 
 Annotation:
 
-- The navigation separates physical products from tools and Store, so visitors can understand the offer without mixing devices, apps, guides, books, and publishing work into one vague bucket.
+- The navigation uses Explore as the public umbrella so visitors can discover products, tools, guides, and works without assuming everything must be purchased.
+
+Design note:
+
+> Explore should feel like warm editorial catalogue shelves: practical, curated, easy to scan, and calmer than a conventional ecommerce grid.
+
+---
+
+# Explore Page Copy
+
+## SEO
+
+Page title:
+
+> Explore | brilliantroots
+
+Meta description:
+
+> Browse brilliantroots products, digital tools, published works, free guides, parental kits, and author resources for intentional Muslim homes.
+
+## Hero Section
+
+Eyebrow:
+
+> Explore
+
+Headline:
+
+> Products, tools, works, and guides in one place.
+
+Body:
+
+> Explore is the brilliantroots catalogue: a warm, practical way to find physical products, digital tools, published works, free guides, and parent resources without losing the intention behind them.
+
+Primary CTA:
+
+> Browse the Catalogue
+
+Secondary CTA:
+
+> Read the Pathway
+
+## Catalogue Intro
+
+Section eyebrow:
+
+> Curated Shelves
+
+Headline:
+
+> Choose the kind of support your home needs next.
+
+Body:
+
+> Each entry should make the purpose clear: what it serves, who it is for, and how it fits into family life.
+
+Entry categories:
+
+- Products
+- Tools
+- Published Works
+- Free Guides
+- Parental Kits
+- Author Resources
+
+Annotation:
+
+- Explore is the visitor-facing name. Products, Tools, and Store can remain internal content types or filters, but visitors should not have to decide which bucket something belongs to before browsing.
 
 ---
 
@@ -162,7 +230,7 @@ Subheadline:
 
 Primary CTA:
 
-> Explore Products
+> Explore the Catalogue
 
 Secondary CTA:
 
@@ -182,11 +250,11 @@ Annotation:
 
 - The hero leads with the broadest value proposition: products plus guidance for the Muslim home. It speaks to both parents and prospective spouses without becoming generic.
 
-## Our Products Preview
+## Explore Preview
 
 Section eyebrow:
 
-> Our Products
+> Explore
 
 Headline:
 
@@ -194,9 +262,9 @@ Headline:
 
 Body:
 
-> Start with the product that fits your family's current need. Some products are ready to buy, some open for preorder, and others are being prepared for launch.
+> Start with the support that fits your family's current need. Some entries are ready to buy, some open for preorder, some are free to read, and others are being prepared for launch.
 
-Product cards:
+Catalogue cards:
 
 ### MQCD
 
@@ -284,7 +352,7 @@ CTA:
 
 Annotation:
 
-- Product descriptions focus on use and benefit, not only contents. This helps parents quickly decide what fits their home.
+- Catalogue descriptions focus on use and benefit, not only contents. This helps parents quickly decide what fits their home.
 
 ## Pathway Summary
 
@@ -306,7 +374,7 @@ CTA:
 
 Secondary CTA:
 
-> Explore Related Products
+> Explore Related Entries
 
 Annotation:
 
@@ -324,11 +392,11 @@ Headline:
 
 Body:
 
-> The Store brings together paid and free works that support Islamic learning, parenting, family formation, and beneficial reading. Some works are published by brilliantroots, and others may feature Muslim writers whose work deserves to reach more homes.
+> Explore brings together paid and free works that support Islamic learning, parenting, family formation, and beneficial reading. Some works are published by brilliantroots, and others may feature Muslim writers whose work deserves to reach more homes.
 
 CTA:
 
-> Visit the Store
+> Explore Published Works
 
 Secondary CTA:
 
@@ -422,19 +490,19 @@ Headline:
 
 Body:
 
-> Explore products, read the Pathway, or visit the Store for works and guides that support Muslim family life.
+> Explore the catalogue or read the Pathway for works, guides, and products that support Muslim family life.
 
 Primary CTA:
 
-> Explore Products
+> Explore the Catalogue
 
 Secondary CTA:
 
-> Visit the Store
+> Read the Pathway
 
 ---
 
-# Products Page Copy
+# Products Copy
 
 ## SEO
 
@@ -470,7 +538,7 @@ Secondary CTA:
 
 Annotation:
 
-- The page is direct about commerce while still keeping the brand grounded in benefit.
+- Products should live under Explore as one content type. Product detail pages can still use direct product-focused copy for commerce, preorder, and availability decisions.
 
 ## Product Index Intro
 
@@ -773,7 +841,7 @@ Primary CTA:
 
 Secondary CTA:
 
-> Explore Products
+> Explore the Catalogue
 
 Annotation:
 
@@ -839,7 +907,7 @@ CTA:
 
 ---
 
-# Store Page Copy
+# Published Works / Store Copy
 
 ## SEO
 
@@ -875,7 +943,7 @@ Secondary CTA:
 
 Annotation:
 
-- "Store" is familiar and direct, while the body copy explains that this is not only a product shop.
+- "Store" can remain the commerce backend/content type, but the public discovery surface should use Explore so paid and free works can sit beside products, guides, and kits without implying that every entry must be purchased.
 
 ## Store Categories
 
@@ -1035,7 +1103,7 @@ Subheadline:
 
 Primary CTA:
 
-> Explore Products
+> Explore the Catalogue
 
 Secondary CTA:
 
@@ -1247,9 +1315,9 @@ Use this checklist before implementing or publishing copy.
 - Product descriptions explain benefit, not only contents.
 - No fake testimonials, fake statistics, or unsupported claims.
 - Product CTA copy responds to backend availability status.
-- Store copy includes paid and free works.
+- Explore copy includes paid and free works.
 - Pathway copy speaks to prospective spouses and families.
-- Tools remain separate from physical products.
+- Explore works as the public umbrella for products, tools, works, guides, and kits.
+- Tools remain a distinct internal/content category from physical products.
 - Baytul Asmaa appears under Tools, not Products.
 - Placeholder published works are clearly marked for replacement.
-

@@ -14,16 +14,18 @@ export function RouteCard({ title, body, href, label = "Open", meta }: RouteCard
   return (
     <Link
       href={href}
-      className="group flex h-full flex-col justify-between rounded-2xl border border-br-border bg-br-surface p-6 shadow-soft transition-all duration-200 hover:-translate-y-1 hover:border-br-primary/30 hover:shadow-card dark:shadow-none"
+      className="group flex h-full flex-col justify-between overflow-hidden rounded-[18px] border border-br-border/70 bg-br-surface/95 shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:border-br-primary/35 hover:bg-br-surface hover:shadow-card dark:shadow-none"
     >
-      <div>
-        {meta && <p className="mb-4 font-mono text-xs uppercase tracking-[0.12em] text-br-primary">{meta}</p>}
-        <h3 className="text-2xl font-semibold tracking-tight text-br-text">{title}</h3>
-        <p className="mt-4 text-sm leading-relaxed text-br-muted">{body}</p>
+      <div className="flex items-center justify-between gap-4 border-b border-br-border/60 bg-br-card/55 px-5 py-4">
+        {meta && <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-br-primary">{meta}</p>}
+        <ArrowRight className="h-4 w-4 shrink-0 text-br-muted transition-all group-hover:translate-x-1 group-hover:text-br-primary" />
       </div>
-      <div className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-br-primary">
-        {label}
-        <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+      <div className="flex flex-1 flex-col p-6">
+        <h3 className="text-2xl font-semibold leading-tight tracking-tight text-br-text">{title}</h3>
+        <p className="mt-4 flex-1 text-sm leading-relaxed text-br-muted">{body}</p>
+        <div className="mt-8 inline-flex items-center gap-2 border-t border-br-border/60 pt-4 text-sm font-semibold text-br-primary">
+          {label}
+        </div>
       </div>
     </Link>
   );

@@ -41,7 +41,7 @@ export default async function ToolDetailPage({ params }: ToolPageProps) {
             ? { label: `Visit ${tool.title}`, href: tool.websiteHref }
             : { label: `Open ${tool.pathway}`, href: tool.pathwayHref }
         }
-        secondary={{ label: "All tools", href: "/tools" }}
+        secondary={{ label: "All Explore entries", href: "/explore" }}
       />
 
       <section className="bg-br-surface py-16 md:py-24">

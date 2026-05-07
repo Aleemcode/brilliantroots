@@ -2,9 +2,9 @@
 
 ## Taste Direction
 
-Refined, rooted, quiet, intentional.
+Refined, rooted, useful, editorial, warmly intentional.
 
-brilliantroots should feel like a well-kept study, a family notebook, and a trusted teacher's counsel. It should not feel like a loud ecommerce shop, a generic SaaS landing page, or a children's cartoon app.
+brilliantroots should feel like a well-kept Muslim home library: useful shelves, family notes, trusted counsel, and carefully chosen objects. It should not feel like a loud ecommerce shop, a generic SaaS landing page, or a children's cartoon app.
 
 Intentionality should be visible in the structure, not only in the copy. The user should feel that every card, route, CTA, and product is placed because it serves a purpose.
 
@@ -22,6 +22,7 @@ Intentionality should be visible in the structure, not only in the copy. The use
 - Loud gradients, glassmorphism, and trend-led SaaS visuals.
 - Childish colors that make the brand feel like a toy store.
 - Product grids that feel disconnected from the parent journey.
+- Product grids that feel like generic ecommerce tiles instead of curated catalogue entries.
 - Excessive religious ornament without functional meaning.
 - Overly academic copy that makes parents feel inadequate.
 - Dark-mode borders that look sharp, neon, or high-friction.
@@ -76,6 +77,18 @@ Imagery should show real product context when possible:
 - Calm household scenes.
 
 Avoid generic stock photos, overly staged smiles, and dark atmospheric crops that obscure the product.
+
+### Cards
+
+Cards should feel like warm editorial catalogue entries:
+
+- Clear category metadata at the top.
+- Real product, tool, or publication imagery.
+- Strong title and short practical description.
+- Soft paper-like surface, restrained border, and subtle light-mode shadow.
+- Theme-tinted tags and hover states.
+
+Borrow the confidence of editorial directories and catalogue cards, but adapt it to the warm paper background and family-library tone.
 
 ### Iconography
 

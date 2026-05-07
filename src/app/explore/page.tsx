@@ -1,5 +1,5 @@
 import { ExplorePage } from "@/components/page/explore-page";
 
-export default function ToolsPage() {
+export default function Page() {
   return <ExplorePage />;
 }

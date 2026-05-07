@@ -12,11 +12,11 @@ export type ToolSlug =
   | "tarbiyah-corner-library";
 
 export const mainNav = [
-  { label: "Start Here", href: "/start-here" },
-  { label: "Pathways", href: "/pathways" },
-  { label: "Tools", href: "/tools" },
-  { label: "Library", href: "/library" },
-  { label: "About", href: "/about" },
+  { label: "Home", href: "/" },
+  { label: "Explore", href: "/explore" },
+  { label: "Pathway", href: "/pathways" },
+  { label: "About Us", href: "/about" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 export const intentionSteps = [
@@ -62,9 +62,9 @@ export const startPaths = [
   },
   {
     title: "I need child-ready tools",
-    href: "/tools",
+    href: "/explore",
     body: "For parents ready to choose a product, but wanting it tied to a known purpose.",
-    firstStep: "Start with the tool finder, then open the pathway connected to that tool.",
+    firstStep: "Start with Explore, then open the pathway connected to that product, tool, or work.",
   },
   {
     title: "I need screen/device guidance",
@@ -162,8 +162,8 @@ export const pathways = [
     href: "/pathways/screen-free-learning",
     recommendedToolHref: "/tools/quran-companion-device",
     recommendedTool: "Qur'an Companion Device",
-    nextStepHref: "/tools",
-    nextStep: "Find a fitting tool",
+    nextStepHref: "/explore",
+    nextStep: "Explore fitting support",
   },
 ] satisfies Array<{
   slug: PathwaySlug;

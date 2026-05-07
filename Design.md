@@ -2,7 +2,7 @@
 
 ## Product Intent
 
-Build a calm, trustworthy website that helps Muslim parents understand the brilliantroots ecosystem and choose the next right step in their family tarbiyah journey.
+Build a calm, trustworthy website that helps Muslim parents understand the brilliantroots ecosystem, explore useful support, and choose the next right step in their family tarbiyah journey.
 
 The interface should feel like guided counsel, not a shop shouting for attention. It should still convert, but conversion should follow clarity.
 
@@ -54,11 +54,13 @@ The site has five content layers:
    - Routines
    - Downloads
 
-4. Tools
-   - Digital platforms
-   - Devices
-   - Books
-   - Systems
+4. Explore
+   - Physical products
+   - Digital tools
+   - Published works
+   - Free guides
+   - Parental kits
+   - Author resources
 
 5. Conversion and continuity
    - Product purchase/preorder
@@ -129,22 +131,22 @@ Content blocks:
 - What brilliantroots avoids.
 - How resources are reviewed.
 
-CTA: Start with the Digest or Explore Tools.
+CTA: Start with the Digest or Explore the catalogue.
 
-### Products / Ecosystem
+### Explore / Catalogue
 
-Purpose: Help users find the right tool.
+Purpose: Help users find the right product, tool, work, or guide without splitting the mental model across several top-level destinations.
 
-Product listing should support:
+Explore listing should support:
 
 - Filter by family need: names, Qur'an/memorization, parent formation, routines, adab.
-- Filter by format: digital platform, device, book, printable, guide.
+- Filter by format: physical product, digital platform, book, printable, guide, kit.
 - Filter by stage/age where relevant.
-- Compare products by outcome, not only type.
+- Compare entries by outcome, not only type.
 
 Card content:
 
-- Product name.
+- Entry name.
 - Need it serves.
 - Best for.
 - Format.
@@ -218,20 +220,19 @@ Content blocks:
 
 Primary navigation:
 
-- Start Here
-- Pathways
-- Tools
-- Library
-- About
-- Community
+- Home
+- Explore
+- Pathway
+- About Us
+- Contact Us
 
 Utility navigation:
 
-- Login
-- Contact
-- Cart/Shop when commerce is enabled
+- Cart
+- Checkout
+- Account
 
-Mobile navigation should preserve the same labels. Avoid hiding "Start Here"; it is the main routing concept.
+Mobile navigation should preserve the same labels. Explore is the public umbrella for products, tools, works, and guides; Pathway is the guidance structure that helps people choose with intention.
 
 ## Visual System
 
@@ -277,6 +278,7 @@ Core components:
 - Section
 - Card
 - PathwayCard
+- ExploreCard
 - ProductCard
 - ProductSlideover
 - Badge
@@ -290,7 +292,7 @@ Core components:
 
 - Text contrast must hold in all color themes and dark mode.
 - Cards that navigate should be links with clear accessible names.
-- Product images need alt text that describes the product meaningfully.
+- Product and publication images need alt text that describes the entry meaningfully.
 - CTAs should be clear without relying only on color.
 - Dark-mode borders should be soft enough not to vibrate, but visible enough to show structure.
 
@@ -301,6 +303,7 @@ Early qualitative metrics:
 - Parents can explain what brilliantroots does after the hero and first section.
 - Parents can identify their starting path without reading the whole page.
 - Product cards make clear which family need each product serves.
+- Explore cards make clear whether the entry is a product, tool, work, guide, or kit.
 - Users trust the methodology before reaching the final CTA.
 
 Quantitative metrics later:

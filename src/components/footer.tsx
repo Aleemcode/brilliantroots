@@ -3,29 +3,29 @@ import Link from "next/link";
 import { Logo } from "@/components/ui/logo";
 
 const footerLinks = {
-  Start: [
-    { label: "Start Here", href: "/start-here" },
-    { label: "Pathways", href: "/pathways" },
-    { label: "The Method", href: "/library/method" },
-    { label: "Jumuʿah Digest", href: "/library/jumuah-digest" },
+  Explore: [
+    { label: "Catalogue", href: "/explore" },
+    { label: "Products", href: "/explore" },
+    { label: "Published Works", href: "/library" },
+    { label: "Free Guides", href: "/library" },
   ],
-  Pathways: [
+  Products: [
+    { label: "MQCD", href: "/tools/quran-companion-device" },
+    { label: "Tarbiyah Pack", href: "/explore" },
+    { label: "Modern Qur'an Stand", href: "/explore" },
+    { label: "Baytul Asmaa", href: "https://baytul-asmaa.com/" },
+  ],
+  Pathway: [
     { label: "Foundations", href: "/pathways/foundations" },
     { label: "Family Rhythm", href: "/pathways/family-rhythm" },
     { label: "Names & Identity", href: "/pathways/names-and-identity" },
     { label: "Screen-Free Learning", href: "/pathways/screen-free-learning" },
   ],
-  Tools: [
-    { label: "Baytul Asmaa", href: "https://baytul-asmaa.com/" },
-    { label: "Qur'an Companion", href: "/tools/quran-companion-device" },
-    { label: "Tarbiyah Corner", href: "/tools/tarbiyah-corner-library" },
-    { label: "Tool Finder", href: "/tools" },
-  ],
-  Trust: [
-    { label: "About", href: "/about" },
-    { label: "Trust & Review", href: "/about" },
-    { label: "Library", href: "/library" },
-    { label: "Contact", href: "/contact" },
+  brilliantroots: [
+    { label: "About Us", href: "/about" },
+    { label: "Contact Us", href: "/contact" },
+    { label: "Publishing Inquiries", href: "/contact" },
+    { label: "Jumu'ah Digest", href: "/library/jumuah-digest" },
   ],
 };
 
@@ -39,7 +39,7 @@ export function Footer() {
           <div className="lg:col-span-1 space-y-6">
             <Logo variant="horizontal" className="h-7 w-auto text-white" />
             <p className="text-sm text-white/70 leading-relaxed max-w-xs">
-              Intentional tarbiyah pathways, tools, and reminders for Muslim families. Rooted in Qurʾān and Sunnah, upon the understanding of the Salaf.
+              Products, tools, guides, and published works for Muslim homes seeking faith, learning, adab, and family clarity.
             </p>
           </div>
 
