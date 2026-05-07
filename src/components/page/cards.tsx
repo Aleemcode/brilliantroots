@@ -14,10 +14,10 @@ export function RouteCard({ title, body, href, label = "Open", meta }: RouteCard
   return (
     <Link
       href={href}
-      className="group flex h-full flex-col justify-between overflow-hidden rounded-[18px] border border-br-border/70 bg-br-surface/95 shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:border-br-primary/35 hover:bg-br-surface hover:shadow-card dark:shadow-none"
+      className="paper-panel group flex h-full flex-col justify-between overflow-hidden rounded-[16px] transition-all duration-200 hover:-translate-y-0.5 hover:border-br-primary/35 dark:shadow-none"
     >
-      <div className="flex items-center justify-between gap-4 border-b border-br-border/60 bg-br-card/55 px-5 py-4">
-        {meta && <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-br-primary">{meta}</p>}
+      <div className="flex items-center justify-between gap-4 border-b editorial-rule px-5 py-4">
+        {meta && <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-br-primary">{meta}</p>}
         <ArrowRight className="h-4 w-4 shrink-0 text-br-muted transition-all group-hover:translate-x-1 group-hover:text-br-primary" />
       </div>
       <div className="flex flex-1 flex-col p-6">
@@ -39,7 +39,7 @@ export function DetailPanel({
   children: React.ReactNode;
 }) {
   return (
-    <div className="rounded-2xl border border-br-border bg-br-surface p-6 shadow-soft dark:shadow-none">
+    <div className="paper-panel rounded-[16px] p-6 dark:shadow-none">
       <h2 className="text-xl font-semibold tracking-tight text-br-text">{title}</h2>
       <div className="mt-4 text-sm leading-relaxed text-br-muted">{children}</div>
     </div>

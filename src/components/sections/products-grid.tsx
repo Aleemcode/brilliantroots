@@ -51,25 +51,24 @@ export function ProductsGrid() {
 
   return (
     <Section id="explore" background="muted">
-      <div className="mx-auto max-w-6xl px-6 sm:px-8 lg:px-12 py-24 border-t border-br-border/50">
+      <div className="mx-auto max-w-7xl px-6 py-24 sm:px-8 lg:px-12">
         
         {/* Header Area */}
-        <div className="mb-16 max-w-3xl">
+        <div className="mb-14 grid gap-8 border-y border-br-border/70 py-10 md:grid-cols-[0.78fr_1.22fr] md:items-end">
           <AnimateIn>
-            <div className="flex items-center gap-2 mb-6 text-sm font-mono tracking-tight text-br-primary uppercase">
-              <span>— 03 EXPLORE</span>
+            <div className="font-mono text-sm uppercase tracking-[0.16em] text-br-primary">
+              <span>03 / Explore</span>
             </div>
           </AnimateIn>
           
           <AnimateIn delay={0.1}>
-            <h2 className="text-[2.5rem] md:text-[3.5rem] leading-[1.1] tracking-[-0.03em] font-bold text-br-text mb-6">
-              Products, tools, and works<br />
-              <span className="text-br-primary">arranged like useful shelves.</span>
+            <h2 className="max-w-4xl text-[2.75rem] font-bold leading-[1.02] tracking-[-0.04em] text-br-text md:text-[4.25rem]">
+              Products, tools, and works arranged like useful shelves.
             </h2>
           </AnimateIn>
 
-          <AnimateIn delay={0.2}>
-            <p className="text-lg text-br-muted leading-relaxed max-w-2xl">
+          <AnimateIn delay={0.2} className="md:col-start-2">
+            <p className="max-w-2xl text-lg leading-relaxed text-br-muted">
               Explore the support that fits your home: physical products, digital tools,
               published works, guides, and kits for Muslim family life.
             </p>
@@ -77,42 +76,48 @@ export function ProductsGrid() {
         </div>
 
         {/* Grid Area */}
-        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {products.map((product) => (
+        <StaggerContainer className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {products.map((product, index) => (
             <StaggerItem key={product.id}>
               <div 
                 onClick={() => setSelectedProduct(product)}
-                className="group flex h-full cursor-pointer flex-col overflow-hidden rounded-[18px] border border-br-border/70 bg-br-surface shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:border-br-primary/35 hover:shadow-card dark:shadow-none"
+                className="paper-panel group flex h-full cursor-pointer flex-col overflow-hidden rounded-[16px] transition-all duration-300 hover:-translate-y-0.5 hover:border-br-primary/40"
               >
+                <div className="grid grid-cols-[auto_1fr] border-b border-br-border/65">
+                  <div className="flex w-16 items-center justify-center border-r border-br-border/65 font-mono text-xs text-br-muted">
+                    {String(index + 1).padStart(2, "0")}
+                  </div>
+                  <div className="flex min-h-16 items-center justify-between gap-4 px-5 py-4">
+                    <span className="block font-mono text-[11px] uppercase tracking-[0.16em] text-br-primary">
+                      {product.subtitle}
+                    </span>
+                    <ArrowRight className="h-4 w-4 shrink-0 text-br-muted transition-all group-hover:translate-x-1 group-hover:text-br-primary" />
+                  </div>
+                </div>
+
                 {/* Image Container */}
-                <div className="relative m-3 aspect-[4/3] overflow-hidden rounded-[14px] border border-br-border/60 bg-br-card/70">
+                <div className="relative m-4 aspect-[1.15] overflow-hidden rounded-[12px] border border-br-border/60 bg-br-card/70">
                   <Image
                     src={product.image} 
                     alt={product.title}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                    className="object-contain p-4 transition-transform duration-500 group-hover:scale-[1.03]"
                   />
                   {/* Subtle overlay */}
                   <div className="absolute inset-0 bg-br-primary/0 group-hover:bg-br-primary/10 transition-colors duration-300 mix-blend-overlay" />
                 </div>
 
                 {/* Content Container */}
-                <div className="flex flex-grow flex-col p-6 pt-3">
-                  <div className="mb-4 flex items-center justify-between gap-4 border-b border-br-border/50 pb-3">
-                    <span className="block font-mono text-[11px] uppercase tracking-[0.14em] text-br-primary">
-                      {product.subtitle}
-                    </span>
-                    <ArrowRight className="h-4 w-4 shrink-0 text-br-muted transition-all group-hover:translate-x-1 group-hover:text-br-primary" />
-                  </div>
-                  <h3 className="text-2xl font-semibold leading-tight text-br-text mb-3 tracking-tight group-hover:text-br-primary transition-colors">
+                <div className="flex flex-grow flex-col px-6 pb-6 pt-2">
+                  <h3 className="mb-4 text-3xl font-semibold leading-[1.05] tracking-tight text-br-text transition-colors group-hover:text-br-primary">
                     {product.title}
                   </h3>
-                  <p className="text-br-muted text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
+                  <p className="mb-8 flex-grow text-sm leading-relaxed text-br-muted">
                     {product.description}
                   </p>
 
-                  <div className="mt-auto border-t border-br-border/50 pt-4 text-sm font-semibold text-br-primary transition-colors">
+                  <div className="mt-auto border-t border-br-border/60 pt-4 text-sm font-semibold text-br-primary transition-colors">
                     Open entry
                   </div>
                 </div>

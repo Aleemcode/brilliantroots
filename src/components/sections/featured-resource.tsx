@@ -13,13 +13,13 @@ export function FeaturedResource() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
         {/* Visual */}
         <AnimateIn direction="left">
-          <div className="relative rounded-3xl overflow-hidden shadow-soft border border-br-primary/10 bg-br-surface">
+          <div className="paper-panel relative overflow-hidden rounded-[20px] p-3">
             <Image
               src="/images/featured-resource.png"
               alt="Jumuʿah Digest — weekly Islamic family newsletter displayed on tablet and in print"
               width={640}
               height={640}
-              className="w-full h-auto"
+              className="h-auto w-full rounded-[14px]"
             />
           </div>
         </AnimateIn>

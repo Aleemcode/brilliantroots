@@ -1,88 +1,112 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { AnimateIn } from "@/components/ui/animate";
+import { ArrowRight, BookOpen, Compass, Package, PenTool } from "lucide-react";
+
+const catalogueNotes = [
+  {
+    label: "Products",
+    title: "Useful tools for learning, worship, adab, and routine.",
+    icon: Package,
+  },
+  {
+    label: "Pathway",
+    title: "Guides for prospective spouses and Muslim homes seeking clarity.",
+    icon: Compass,
+  },
+  {
+    label: "Published Works",
+    title: "Paid and free works selected for benefit and family use.",
+    icon: BookOpen,
+  },
+  {
+    label: "Tools",
+    title: "Digital support like Baytul Asmaa, with more aids to come.",
+    icon: PenTool,
+  },
+];
 
 export function Hero() {
-  const [typedText, setTypedText] = useState("");
-  const fullText = "intentional tarbiyah";
-
-  useEffect(() => {
-    let currentText = "";
-    let currentIndex = 0;
-    
-    // Initial delay before typing starts
-    const timeout = setTimeout(() => {
-      const interval = setInterval(() => {
-        if (currentIndex < fullText.length) {
-          currentText += fullText[currentIndex];
-          setTypedText(currentText);
-          currentIndex++;
-        } else {
-          clearInterval(interval);
-        }
-      }, 100); // Typing speed
-      
-      return () => clearInterval(interval);
-    }, 500);
-
-    return () => clearTimeout(timeout);
-  }, []);
-
   return (
-    <section className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden min-h-[82vh] flex flex-col justify-center bg-br-bg">
-      <div className="mx-auto max-w-5xl px-6 sm:px-8 lg:px-12 relative z-10 w-full text-center">
-        
-        {/* Pre-title with Typewriter Effect */}
-        <AnimateIn delay={0.1}>
-          <div className="flex items-center justify-center gap-2 mb-8 text-sm md:text-base font-mono tracking-tight text-br-muted h-6">
-            <span className="text-br-primary">$</span> 
-            <span>{typedText}</span>
-            <span className="w-[8px] h-[18px] bg-br-primary/70 animate-pulse ml-0.5"></span>
+    <section className="relative flex min-h-[86vh] flex-col justify-center overflow-hidden px-6 pb-16 pt-28 sm:px-8 md:pb-24 md:pt-36 lg:px-12">
+      <div className="absolute inset-x-0 top-20 mx-auto h-px max-w-7xl bg-br-border/70" />
+      <div className="relative z-10 mx-auto grid w-full max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+        <div>
+          <AnimateIn delay={0.1}>
+            <p className="mb-6 font-mono text-sm uppercase tracking-[0.16em] text-br-primary">
+              Products, tools, and guidance for Muslim homes
+            </p>
+          </AnimateIn>
+
+          <AnimateIn delay={0.2}>
+            <h1 className="max-w-4xl text-[3rem] font-bold leading-[1.02] tracking-[-0.04em] text-br-text md:text-[4.75rem] lg:text-[5.7rem]">
+              Build a home that grows in faith, learning, and adab.
+            </h1>
+          </AnimateIn>
+
+          <AnimateIn delay={0.3}>
+            <p className="mt-8 max-w-2xl text-lg leading-relaxed text-br-muted md:text-xl">
+              brilliantroots creates Islamic products, parenting tools, Pathway guides, and curated published works for Muslim parents and prospective spouses who want clarity before they choose what enters the home.
+            </p>
+          </AnimateIn>
+
+          <AnimateIn delay={0.4}>
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+              <Button asChild variant="primary" size="lg" className="w-full sm:w-auto">
+                <Link href="/explore">
+                  Explore the Catalogue
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              </Button>
+              <Button asChild variant="secondary" size="lg" className="w-full bg-br-surface/45 sm:w-auto">
+                <Link href="/pathways">Read the Pathway</Link>
+              </Button>
+            </div>
+          </AnimateIn>
+
+          <AnimateIn delay={0.5}>
+            <p className="mt-7 max-w-2xl border-l border-br-primary/35 pl-4 font-serif text-base italic leading-relaxed text-br-muted">
+              Useful tools. Beneficial works. Guidance for families trying to nurture righteous roots.
+            </p>
+          </AnimateIn>
+        </div>
+
+        <AnimateIn delay={0.25} direction="right">
+          <div className="paper-panel relative overflow-hidden rounded-[24px] p-4 md:p-5">
+            <div className="border-b editorial-rule px-2 pb-5">
+              <p className="font-mono text-xs uppercase tracking-[0.16em] text-br-primary">Explore Shelf</p>
+              <h2 className="mt-3 max-w-md text-3xl font-semibold leading-tight tracking-tight text-br-text md:text-4xl">
+                Choose what serves the home, not what merely fills it.
+              </h2>
+            </div>
+            <div className="divide-y divide-br-border/60">
+              {catalogueNotes.map((item, index) => (
+                <Link
+                  key={item.label}
+                  href={item.label === "Pathway" ? "/pathways" : "/explore"}
+                  className="group grid grid-cols-[auto_1fr_auto] items-start gap-4 px-2 py-5 transition-colors hover:bg-br-primary-soft/45"
+                >
+                  <span className="font-mono text-xs text-br-muted">{String(index + 1).padStart(2, "0")}</span>
+                  <span>
+                    <span className="flex items-center gap-2 text-sm font-semibold text-br-text">
+                      <item.icon className="h-4 w-4 text-br-primary" />
+                      {item.label}
+                    </span>
+                    <span className="mt-2 block text-sm leading-relaxed text-br-muted">{item.title}</span>
+                  </span>
+                  <ArrowRight className="mt-1 h-4 w-4 text-br-muted transition-all group-hover:translate-x-1 group-hover:text-br-primary" />
+                </Link>
+              ))}
+            </div>
+            <div className="mt-3 rounded-[16px] border border-br-primary/20 bg-br-primary-soft/55 p-4">
+              <p className="text-sm leading-relaxed text-br-text">
+                Explore is the public catalogue. Products, tools, and works remain clear as types inside one calmer discovery experience.
+              </p>
+            </div>
           </div>
         </AnimateIn>
-
-        {/* Massive Headline */}
-        <AnimateIn delay={0.2}>
-          <h1 className="text-[3rem] md:text-[4.5rem] lg:text-[5.5rem] leading-[1.05] tracking-[-0.04em] font-bold text-br-text mb-8 max-w-5xl mx-auto">
-            Choose tarbiyah with intention.<br />
-            <span className="text-br-primary">Then practice it at home.</span>
-          </h1>
-        </AnimateIn>
-
-        {/* Subtitle */}
-        <AnimateIn delay={0.3}>
-          <p className="text-lg md:text-xl text-br-muted max-w-2xl mx-auto leading-relaxed mb-12">
-            brilliantroots helps Muslim families turn sincere concern into deliberate choices: 
-            clear pathways, household rhythms, and tools that serve a known purpose.
-          </p>
-        </AnimateIn>
-
-        {/* CTA Buttons */}
-        <AnimateIn delay={0.4}>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-            <Button asChild variant="primary" size="lg" className="w-full sm:w-auto min-w-[200px]">
-              <Link href="/start-here">Start With Intention</Link>
-            </Button>
-            <Button asChild variant="secondary" size="lg" className="w-full sm:w-auto min-w-[200px]">
-              <Link href="/pathways">Explore Pathways</Link>
-            </Button>
-          </div>
-        </AnimateIn>
-
-        {/* Meta Info */}
-        <AnimateIn delay={0.5}>
-          <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-mono text-br-muted tracking-tight">
-            <span>Rooted in Qur&apos;an & Sunnah</span>
-            <span className="text-br-border hidden sm:block">·</span>
-            <span>Understanding of the Salaf</span>
-            <span className="text-br-border hidden sm:block">·</span>
-            <span>Tools With Purpose</span>
-          </div>
-        </AnimateIn>
-
       </div>
     </section>
   );

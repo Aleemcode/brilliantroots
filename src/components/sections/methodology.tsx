@@ -36,7 +36,7 @@ export function Methodology() {
           
           {/* Left Column: Typical Store */}
           <AnimateIn delay={0.3}>
-            <div className="h-full bg-br-card rounded-2xl p-8 border border-br-border shadow-sm dark:shadow-none">
+            <div className="paper-panel h-full rounded-[16px] p-8 dark:shadow-none">
               <div className="mb-8">
                 <span className="font-mono text-xs tracking-tight text-br-muted uppercase">
                   {"// WHAT OFTEN HAPPENS"}
@@ -61,7 +61,7 @@ export function Methodology() {
 
           {/* Right Column: Brilliantroots */}
           <AnimateIn delay={0.4}>
-            <div className="h-full bg-br-primary-soft rounded-2xl p-8 border border-br-primary/20 shadow-sm dark:shadow-none">
+            <div className="h-full rounded-[16px] border border-br-primary/25 bg-br-primary-soft/75 p-8 shadow-soft dark:shadow-none">
               <div className="mb-8">
                 <span className="font-mono text-xs tracking-tight text-br-primary uppercase">
                   {"// THE INTENTIONAL WAY"}

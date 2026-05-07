@@ -27,7 +27,7 @@ export function PageHero({
   className,
 }: PageHeroProps) {
   return (
-    <section className={cn("pt-28 pb-16 md:pt-36 md:pb-20 bg-br-bg", className)}>
+    <section className={cn("pt-28 pb-16 md:pt-36 md:pb-20", className)}>
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
         <div className="max-w-4xl">
           <p className="mb-5 font-mono text-sm font-medium tracking-tight text-br-primary">

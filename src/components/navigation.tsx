@@ -5,7 +5,7 @@ import { mainNav } from "@/lib/site-content";
 
 export function Navigation() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-br-bg/90 backdrop-blur-xl border-b border-br-border/10">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-br-border/45 bg-br-bg/82 backdrop-blur-xl">
       <nav className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
         <div className="flex h-16 md:h-20 items-center justify-between">
           {/* Logo */}

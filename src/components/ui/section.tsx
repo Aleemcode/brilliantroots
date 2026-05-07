@@ -9,14 +9,14 @@ interface SectionProps {
 }
 
 const bgMap = {
-  default: "bg-br-bg",
-  bg: "bg-br-bg",
-  white: "bg-br-surface",
+  default: "bg-transparent",
+  bg: "bg-transparent",
+  white: "bg-br-surface/55",
   "soft-blue": "bg-br-soft-blue",
-  warm: "bg-br-surface-strong",
+  warm: "bg-br-surface-strong/70",
   navy: "bg-br-navy",
   "soft-green": "bg-br-soft-green",
-  muted: "bg-br-card",
+  muted: "bg-br-card/45",
 };
 
 const containerMap = {
@@ -37,7 +37,7 @@ export function Section({
     <section
       id={id}
       className={cn(
-        "py-20 md:py-28 lg:py-32",
+        "relative py-20 md:py-28 lg:py-32",
         bgMap[background],
         className
       )}
