@@ -31,7 +31,7 @@ const footerLinks = {
 
 export function Footer() {
   return (
-    <footer className="bg-br-primary-dark text-white transition-colors duration-500">
+    <footer className="border-t-2 border-br-border bg-br-primary-dark text-white transition-colors duration-500">
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
         {/* Main Footer */}
         <div className="py-20 md:py-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-10">

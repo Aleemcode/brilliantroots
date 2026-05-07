@@ -41,12 +41,12 @@ export default async function PathwayDetailPage({ params }: PathwayPageProps) {
   return (
     <SiteFrame>
       <section className="px-6 pb-16 pt-28 sm:px-8 md:pb-24 md:pt-36 lg:px-12">
-        <div className="mx-auto max-w-7xl border-y editorial-rule py-10">
-          <p className="font-mono text-xs uppercase tracking-[0.18em] text-br-primary">Pathway Guide</p>
+        <div className="mx-auto max-w-7xl border-y-2 editorial-rule py-10">
+          <p className="mb-6 max-w-max rounded-full border-2 border-[#B9F0D6] bg-[#E7FAF2] px-4 py-2 font-mono text-xs font-bold uppercase tracking-[0.16em] text-[#052E1C] shadow-[0_2px_0_#B9F0D6]">Pathway Guide</p>
           <h1 className="mt-6 max-w-5xl text-[3rem] font-bold leading-[1.02] tracking-[-0.04em] text-br-text md:text-[5.25rem]">
             {pathway.title}
           </h1>
-          <p className="mt-7 max-w-3xl text-lg leading-relaxed text-br-muted">{pathway.intent}</p>
+          <p className="mt-7 max-w-3xl text-lg font-medium leading-relaxed text-br-muted">{pathway.intent}</p>
         </div>
       </section>
 
@@ -54,11 +54,11 @@ export default async function PathwayDetailPage({ params }: PathwayPageProps) {
         <div className="mx-auto grid max-w-7xl gap-5 md:grid-cols-2">
           {sections.map(([title, body], index) => (
             <div key={title} className="paper-panel rounded-[18px] p-7">
-              <p className="font-mono text-xs uppercase tracking-[0.18em] text-br-primary">
+              <p className="font-mono text-xs font-bold uppercase tracking-[0.18em] text-br-primary">
                 {String(index + 1).padStart(2, "0")}
               </p>
-              <h2 className="mt-5 text-2xl font-semibold tracking-tight text-br-text">{title}</h2>
-              <p className="mt-4 text-sm leading-relaxed text-br-muted">{body}</p>
+              <h2 className="mt-5 text-2xl font-bold tracking-tight text-br-text">{title}</h2>
+              <p className="mt-4 text-sm font-medium leading-relaxed text-br-muted">{body}</p>
             </div>
           ))}
         </div>

@@ -41,7 +41,7 @@ const entries = [
     type: "Product",
     title: "Modern Qur'an Stand",
     body: "A simple, dignified stand for Qur'an reading, review, and family learning spaces.",
-    image: "/images/featured-resource.png",
+    image: "/guide-poses/guide_pose_pointing_up_1777588956957.png",
     bestFor: "Families creating a dedicated, respectful reading and review area.",
     benefits: [
       "Helps make Qur'an reading visible and cared for in the home.",
@@ -56,7 +56,7 @@ const entries = [
     type: "Published Work",
     title: "[Placeholder] The Intentional Muslim Home",
     body: "A replaceable title for a future work that supports Islamic learning, parenting, family formation, and beneficial reading.",
-    image: "/images/featured-resource.png",
+    image: "/guide-poses/guide_pose_pointing_left_1777589018178.png",
     bestFor: "Parents and prospective spouses who want deeper reading before choosing routines or tools.",
     benefits: [
       "Frames the home as a place of faith, learning, adab, and intention.",
@@ -71,7 +71,7 @@ const entries = [
     type: "Free Guide",
     title: "Jumu'ah Digest",
     body: "A weekly dose of bite-sized wisdom, insights, and beneficial perks to help intentional parents and families nurture righteous roots.",
-    image: "/images/featured-resource.png",
+    image: "/guide-poses/guide_pose_waving_1777588966929.png",
     bestFor: "Families who need one small action rather than another large plan.",
     benefits: [
       "Keeps intention alive through a weekly rhythm.",
@@ -114,7 +114,7 @@ export default async function ExploreEntryPage({ params }: ExploreEntryPageProps
       <section className="px-6 pb-16 pt-28 sm:px-8 md:pb-24 md:pt-36 lg:px-12">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>
-            <p className="mb-6 max-w-max border-y editorial-rule py-3 font-mono text-xs uppercase tracking-[0.18em] text-br-primary">
+            <p className="mb-6 max-w-max rounded-full border-2 editorial-rule bg-white px-4 py-2 font-mono text-xs font-bold uppercase tracking-[0.16em] text-br-primary shadow-[0_2px_0_var(--color-border)]">
               {entry.type} / {entry.status}
             </p>
             <h1 className="text-[3rem] font-bold leading-[1.02] tracking-[-0.04em] text-br-text md:text-[5.25rem]">
@@ -134,7 +134,7 @@ export default async function ExploreEntryPage({ params }: ExploreEntryPageProps
             </div>
           </div>
           <div className="paper-panel overflow-hidden rounded-[22px] p-5">
-            <div className="relative aspect-square overflow-hidden rounded-[16px] border editorial-rule bg-br-card/70">
+            <div className="relative aspect-square overflow-hidden rounded-[16px] border-2 editorial-rule bg-br-surface-strong">
               <Image src={entry.image} alt={entry.title} fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-contain p-6" />
             </div>
           </div>

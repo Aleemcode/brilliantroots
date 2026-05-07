@@ -6,15 +6,16 @@
   :root, [data-theme="navy"] {
     --color-primary: #001F51;
     --color-primary-dark: #000614;
-    --color-primary-soft: #E8EDF2;
+    --color-primary-soft: #EAF1FF;
     --color-secondary: #3B86FE;
-    --color-bg: #F4ECDD;
-    --color-surface: #FFF9ED;
-    --color-surface-strong: #EFE2CB;
-    --color-card: #F8EEDC;
+    --color-bg: #FFFFFF;
+    --color-surface: #FFFFFF;
+    --color-surface-strong: #F7F7F7;
+    --color-card: #FFFFFF;
     --color-text: #001F51;
-    --color-muted: #6E644F;
-    --color-border: #D8C7A8;
+    --color-muted: #666F7B;
+    --color-border: #E5E7EB;
+    --button-shadow: #001436;
   }
 
   [data-theme="blue"] {
@@ -22,13 +23,14 @@
     --color-primary-dark: #172554;
     --color-primary-soft: #EAF3FF;
     --color-secondary: #001F51;
-    --color-bg: #F4ECDE;
-    --color-surface: #FFF9EE;
-    --color-surface-strong: #E9EDF4;
-    --color-card: #F7EEDD;
+    --color-bg: #FFFFFF;
+    --color-surface: #FFFFFF;
+    --color-surface-strong: #F7FAFF;
+    --color-card: #FFFFFF;
     --color-text: #001F51;
-    --color-muted: #6D665A;
-    --color-border: #D6C8AE;
+    --color-muted: #5C6F84;
+    --color-border: #E1E8F2;
+    --button-shadow: #1762C7;
   }
 
   [data-theme="green"] {
@@ -36,13 +38,14 @@
     --color-primary-dark: #022c22;
     --color-primary-soft: #E7FAF2;
     --color-secondary: #001F51;
-    --color-bg: #F3EBDD;
-    --color-surface: #FFF9ED;
-    --color-surface-strong: #E9E7D1;
-    --color-card: #F6EEDC;
+    --color-bg: #FFFFFF;
+    --color-surface: #FFFFFF;
+    --color-surface-strong: #F4FCF8;
+    --color-card: #FFFFFF;
     --color-text: #052E1C;
-    --color-muted: #646950;
-    --color-border: #D0C7A8;
+    --color-muted: #4B6E5D;
+    --color-border: #DCEFE5;
+    --button-shadow: #139A60;
   }
 
   [data-theme="orange"] {
@@ -50,13 +53,14 @@
     --color-primary-dark: #431407;
     --color-primary-soft: #FFF0E8;
     --color-secondary: #001F51;
-    --color-bg: #F7EDDE;
-    --color-surface: #FFF9EE;
-    --color-surface-strong: #F5E0CD;
-    --color-card: #F8EADA;
+    --color-bg: #FFFFFF;
+    --color-surface: #FFFFFF;
+    --color-surface-strong: #FFF8F4;
+    --color-card: #FFFFFF;
     --color-text: #3D1500;
     --color-muted: #825035;
-    --color-border: #DFC2A8;
+    --color-border: #F4DED0;
+    --button-shadow: #C34100;
   }
 
   [data-theme="gold"] {
@@ -64,13 +68,14 @@
     --color-primary-dark: #3A2700;
     --color-primary-soft: #FFF6DF;
     --color-secondary: #001F51;
-    --color-bg: #F6EDDC;
-    --color-surface: #FFF9ED;
-    --color-surface-strong: #F7E5BD;
-    --color-card: #F9EED8;
+    --color-bg: #FFFFFF;
+    --color-surface: #FFFFFF;
+    --color-surface-strong: #FFFBEF;
+    --color-card: #FFFFFF;
     --color-text: #332100;
     --color-muted: #765D2A;
-    --color-border: #DEC58C;
+    --color-border: #F1DEAA;
+    --button-shadow: #D39B2E;
   }
 
   .dark {
@@ -82,6 +87,7 @@
     --color-muted: #A8A298;
     --color-border: rgba(255, 255, 255, 0.055);
     --color-primary-soft: rgba(255, 255, 255, 0.06);
+    --button-shadow: rgba(0, 0, 0, 0.45);
   }
 
   /* Keep Theme Accents in Dark Mode */
@@ -117,79 +123,41 @@
   }
 
   body {
-    background:
-      radial-gradient(circle at 12% 8%, color-mix(in srgb, var(--color-primary) 13%, transparent) 0, transparent 25rem),
-      radial-gradient(circle at 86% 12%, rgba(255, 203, 102, 0.28) 0, transparent 24rem),
-      linear-gradient(180deg, var(--color-bg) 0%, color-mix(in srgb, var(--color-bg) 88%, #fff7e8) 100%);
+    background: var(--color-bg);
     color: theme('colors.br-text');
     font-family: theme('fontFamily.sans');
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
-  body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-    pointer-events: none;
-    opacity: 0.38;
-    background-image:
-      linear-gradient(rgba(84, 56, 22, 0.052) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(84, 56, 22, 0.04) 1px, transparent 1px),
-      url("data:image/svg+xml,%3Csvg viewBox='0 0 240 240' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='paper'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.72' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23paper)' opacity='0.45'/%3E%3C/svg%3E");
-    background-size: 42px 42px, 42px 42px, 260px 260px;
-    mix-blend-mode: multiply;
-  }
-
-  .dark body::before {
-    opacity: 0.035;
-    mix-blend-mode: screen;
-  }
+  body::before { content: none; }
 }
 
 @layer components {
   .paper-panel {
-    border: 1px solid color-mix(in srgb, var(--color-border) 62%, transparent);
-    background:
-      linear-gradient(135deg, rgba(255, 255, 255, 0.58), transparent 42%),
-      linear-gradient(180deg, color-mix(in srgb, var(--color-surface) 93%, var(--color-primary-soft)), color-mix(in srgb, var(--color-card) 72%, var(--color-surface)));
-    box-shadow:
-      0 22px 48px -34px rgba(70, 43, 12, 0.52),
-      inset 0 1px 0 rgba(255, 255, 255, 0.65);
+    border: 2px solid var(--color-border);
+    background: var(--color-surface);
+    box-shadow: 0 4px 0 color-mix(in srgb, var(--color-border) 92%, #cbd5e1);
   }
 
   .dark .paper-panel {
-    border-color: color-mix(in srgb, var(--color-border) 72%, transparent);
-    background:
-      linear-gradient(135deg, rgba(255, 255, 255, 0.035), transparent 44%),
-      color-mix(in srgb, var(--color-surface) 88%, var(--color-primary-soft));
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.035);
+    border-color: var(--color-border);
+    background: var(--color-surface);
+    box-shadow: 0 4px 0 rgba(255, 255, 255, 0.03);
   }
 
   .editorial-rule {
-    border-color: color-mix(in srgb, var(--color-border) 58%, transparent);
+    border-color: var(--color-border);
   }
 
   .dark .editorial-rule {
-    border-color: color-mix(in srgb, var(--color-border) 48%, transparent);
+    border-color: color-mix(in srgb, var(--color-border) 60%, transparent);
   }
-}
 
-/* Texture Overlay */
-.bg-grain {
-  position: relative;
-}
-.bg-grain::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 50;
-  opacity: 0.04;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  .color-tile-blue { background: #EAF3FF; color: #001F51; border-color: #BFD9FF; }
+  .color-tile-gold { background: #FFF4CC; color: #3A2700; border-color: #FFE199; }
+  .color-tile-orange { background: #FFF0E8; color: #431407; border-color: #FFC9AE; }
+  .color-tile-green { background: #E7FAF2; color: #052E1C; border-color: #B9F0D6; }
 }
 
 /* Arch Utilities */

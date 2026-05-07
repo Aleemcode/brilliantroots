@@ -49,7 +49,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${sora.variable} ${libre.variable} h-full antialiased`} suppressHydrationWarning>
       <body className="min-h-full flex flex-col font-sans relative" suppressHydrationWarning>
-        <div className="bg-grain fixed inset-0 z-[-1] pointer-events-none" />
         {children}
       </body>
     </html>

@@ -15,15 +15,17 @@ const exploreEntries = [
     image: "/mqcd-device.png",
     cta: "View MQCD",
     icon: Package,
+    tone: "color-tile-gold",
   },
   {
     type: "Product",
     title: "Tarbiyah Pack",
     body: "A family learning pack for Qur'an listening, salah, adab, Qur'an knowledge, and eeman-building routines.",
     href: "/explore",
-    image: "/tarbiyah-corner-book.png",
+    image: "/guide-poses/guide_pose_reading_1777588992696.png",
     cta: "View Tarbiyah Pack",
     icon: Sparkles,
+    tone: "color-tile-green",
   },
   {
     type: "Tool",
@@ -33,6 +35,7 @@ const exploreEntries = [
     image: "/baytul-asmaa-platform.png",
     cta: "Open Tool",
     icon: PenLine,
+    tone: "color-tile-blue",
   },
 ];
 
@@ -67,7 +70,7 @@ function EditorialCard({
   children: React.ReactNode;
   className?: string;
 }) {
-  return <div className={`paper-panel overflow-hidden rounded-[18px] ${className}`}>{children}</div>;
+  return <div className={`paper-panel overflow-hidden rounded-[20px] ${className}`}>{children}</div>;
 }
 
 export function EditorialHome() {
@@ -77,17 +80,17 @@ export function EditorialHome() {
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
           <div>
             <AnimateIn>
-              <p className="mb-6 max-w-max border-y editorial-rule py-3 font-mono text-xs uppercase tracking-[0.18em] text-br-primary">
+              <p className="mb-6 max-w-max rounded-full border-2 editorial-rule bg-white px-4 py-2 font-mono text-xs font-bold uppercase tracking-[0.16em] text-br-primary shadow-[0_2px_0_var(--color-border)]">
                 Products, tools, and guidance for Muslim homes
               </p>
             </AnimateIn>
             <AnimateIn delay={0.08}>
-              <h1 className="max-w-5xl text-[3rem] font-bold leading-[1.01] tracking-[-0.04em] text-br-text md:text-[5rem] lg:text-[6.25rem]">
+              <h1 className="max-w-5xl text-[3rem] font-extrabold leading-[1.01] tracking-[-0.035em] text-br-text md:text-[5rem] lg:text-[6.25rem]">
                 Build a home that grows in faith, learning, and adab.
               </h1>
             </AnimateIn>
             <AnimateIn delay={0.16}>
-              <p className="mt-8 max-w-2xl text-lg leading-relaxed text-br-muted md:text-xl">
+              <p className="mt-8 max-w-2xl text-lg font-medium leading-relaxed text-br-muted md:text-xl">
                 brilliantroots creates Islamic products, parenting tools, Pathway guides, and curated published works for Muslim parents and prospective spouses who want clarity before they choose what enters the home.
               </p>
             </AnimateIn>
@@ -108,8 +111,8 @@ export function EditorialHome() {
 
           <AnimateIn delay={0.18} direction="right">
             <EditorialCard>
-              <div className="grid grid-cols-[4.5rem_1fr] border-b editorial-rule">
-                <div className="flex items-center justify-center border-r editorial-rule font-mono text-xs text-br-muted">01</div>
+              <div className="grid grid-cols-[4.5rem_1fr] border-b-2 editorial-rule color-tile-gold">
+                <div className="flex items-center justify-center border-r-2 editorial-rule font-mono text-xs font-bold text-current/70">01</div>
                 <div className="p-5">
                   <p className="font-mono text-xs uppercase tracking-[0.18em] text-br-primary">brilliantroots</p>
                   <p className="mt-4 font-serif text-3xl italic leading-tight text-br-text">
@@ -117,7 +120,7 @@ export function EditorialHome() {
                   </p>
                 </div>
               </div>
-              <div className="grid divide-y divide-br-border/45">
+              <div className="grid divide-y-2 divide-br-border">
                 {["Products", "Pathway", "Published Works", "Tools"].map((item) => (
                   <Link key={item} href={item === "Pathway" ? "/pathways" : "/explore"} className="group flex items-center justify-between px-5 py-4 text-sm font-semibold text-br-text transition hover:bg-br-primary-soft/45">
                     <span>{item}</span>
@@ -132,7 +135,7 @@ export function EditorialHome() {
 
       <section className="px-6 py-20 sm:px-8 md:py-28 lg:px-12">
         <div className="mx-auto max-w-7xl">
-          <div className="mb-12 grid gap-8 border-y editorial-rule py-10 md:grid-cols-[0.75fr_1.25fr]">
+          <div className="mb-12 grid gap-8 border-y-2 editorial-rule py-10 md:grid-cols-[0.75fr_1.25fr]">
             <p className="font-mono text-xs uppercase tracking-[0.18em] text-br-primary">Explore</p>
             <div>
               <h2 className="text-4xl font-bold leading-tight tracking-[-0.035em] text-br-text md:text-6xl">
@@ -149,22 +152,22 @@ export function EditorialHome() {
               <StaggerItem key={entry.title}>
                 <Link href={entry.href} className="group block h-full">
                   <EditorialCard className="flex h-full flex-col">
-                    <div className="grid grid-cols-[4rem_1fr] border-b editorial-rule">
-                      <div className="flex items-center justify-center border-r editorial-rule font-mono text-xs text-br-muted">
+                    <div className={`grid grid-cols-[4rem_1fr] border-b-2 editorial-rule ${entry.tone}`}>
+                      <div className="flex items-center justify-center border-r-2 editorial-rule font-mono text-xs font-bold text-current/70">
                         {String(index + 1).padStart(2, "0")}
                       </div>
                       <div className="flex items-center justify-between gap-4 p-4">
-                        <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-br-primary">{entry.type}</span>
-                        <entry.icon className="h-4 w-4 text-br-primary" />
+                        <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-current">{entry.type}</span>
+                        <entry.icon className="h-4 w-4 text-current" />
                       </div>
                     </div>
-                    <div className="relative m-4 aspect-[1.12] overflow-hidden rounded-[12px] border editorial-rule bg-br-card/70">
+                    <div className={`relative m-4 aspect-[1.12] overflow-hidden rounded-[14px] border-2 editorial-rule ${entry.tone}`}>
                       <Image src={entry.image} alt={entry.title} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-contain p-4 transition duration-500 group-hover:scale-[1.03]" />
                     </div>
                     <div className="flex flex-1 flex-col p-6 pt-2">
                       <h3 className="text-3xl font-semibold leading-[1.05] tracking-tight text-br-text">{entry.title}</h3>
                       <p className="mt-4 flex-1 text-sm leading-relaxed text-br-muted">{entry.body}</p>
-                      <span className="mt-8 flex items-center justify-between border-t editorial-rule pt-4 text-sm font-semibold text-br-primary">
+                      <span className="mt-8 flex items-center justify-between border-t-2 editorial-rule pt-4 text-sm font-extrabold text-br-primary">
                         {entry.cta}
                         <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
                       </span>
@@ -186,15 +189,15 @@ export function EditorialHome() {
             </h2>
           </div>
           <EditorialCard>
-            <div className="border-b editorial-rule p-6">
+            <div className="border-b-2 editorial-rule color-tile-green p-6">
               <p className="text-lg leading-relaxed text-br-muted">
                 Pathway is a guide for prospective spouses, families that need clarity, and families with foundation who want to consolidate that background and grow in eeman.
               </p>
             </div>
-            <div className="divide-y divide-br-border/45">
+            <div className="divide-y-2 divide-br-border">
               {pathwayAudiences.map((item, index) => (
                 <div key={item} className="grid grid-cols-[4rem_1fr]">
-                  <div className="flex items-center justify-center border-r editorial-rule font-mono text-xs text-br-muted">{String(index + 1).padStart(2, "0")}</div>
+                  <div className="flex items-center justify-center border-r-2 editorial-rule font-mono text-xs font-bold text-br-muted">{String(index + 1).padStart(2, "0")}</div>
                   <p className="p-5 text-sm font-medium leading-relaxed text-br-text">{item}</p>
                 </div>
               ))}
@@ -219,7 +222,7 @@ export function EditorialHome() {
           <div className="grid gap-5 md:grid-cols-3">
             {publishedWorks.map((work) => (
               <EditorialCard key={work.title} className="p-6">
-                <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-br-primary">{work.label}</p>
+                <p className="inline-flex rounded-full border-2 border-[#FFE199] bg-[#FFF4CC] px-3 py-1 font-mono text-[11px] font-bold uppercase tracking-[0.16em] text-[#3A2700]">{work.label}</p>
                 <h3 className="mt-5 text-2xl font-semibold leading-tight tracking-tight text-br-text">{work.title}</h3>
                 <p className="mt-4 text-sm leading-relaxed text-br-muted">{work.body}</p>
               </EditorialCard>
