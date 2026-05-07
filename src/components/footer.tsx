@@ -6,13 +6,13 @@ const footerLinks = {
   Explore: [
     { label: "Catalogue", href: "/explore" },
     { label: "Products", href: "/explore" },
-    { label: "Published Works", href: "/library" },
-    { label: "Free Guides", href: "/library" },
+    { label: "Published Works", href: "/explore#published-works" },
+    { label: "Free Guides", href: "/explore#catalogue" },
   ],
   Products: [
-    { label: "MQCD", href: "/tools/quran-companion-device" },
-    { label: "Tarbiyah Pack", href: "/explore" },
-    { label: "Modern Qur'an Stand", href: "/explore" },
+    { label: "MQCD", href: "/explore/mqcd" },
+    { label: "Tarbiyah Pack", href: "/explore/tarbiyah-pack" },
+    { label: "Modern Qur'an Stand", href: "/explore/modern-quran-stand" },
     { label: "Baytul Asmaa", href: "https://baytul-asmaa.com/" },
   ],
   Pathway: [
@@ -25,7 +25,7 @@ const footerLinks = {
     { label: "About Us", href: "/about" },
     { label: "Contact Us", href: "/contact" },
     { label: "Publishing Inquiries", href: "/contact" },
-    { label: "Jumu'ah Digest", href: "/library/jumuah-digest" },
+    { label: "Jumu'ah Digest", href: "/explore/jumuah-digest" },
   ],
 };
 
@@ -66,7 +66,7 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/10 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="border-t border-white/5 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/40">
             © {new Date().getFullYear()} brilliantroots™️. All rights reserved.
           </p>

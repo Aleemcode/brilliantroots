@@ -18,9 +18,9 @@ const libre = Libre_Baskerville({
 });
 
 export const metadata: Metadata = {
-  title: "brilliantroots™️ — Structured Tarbiyah for Muslim Families",
+  title: "brilliantroots | Islamic Products, Tools, and Published Works for Muslim Families",
   description:
-    "Practical tools, guided resources, and community support to help your family learn, practice, and live Islam daily. Rooted in Qurʾān and Sunnah, upon the understanding of the Salaf.",
+    "Discover Islamic family products, tarbiyah tools, Pathway guides, and curated Muslim published works designed to help parents and prospective spouses nurture righteous roots at home.",
   keywords: [
     "Islamic tarbiyah",
     "Muslim family",
@@ -30,11 +30,13 @@ export const metadata: Metadata = {
     "salah system",
     "Muslim parenting",
     "tarbiyah tools",
+    "Islamic products",
+    "Muslim published works",
   ],
   openGraph: {
-    title: "brilliantroots™️ — Structured Tarbiyah for Muslim Families",
+    title: "brilliantroots | Islamic Products, Tools, and Published Works",
     description:
-      "Practical tools, guided resources, and community support to help your family learn, practice, and live Islam daily.",
+      "Products, tools, Pathway guides, and curated published works for intentional Muslim homes.",
     type: "website",
   },
 };

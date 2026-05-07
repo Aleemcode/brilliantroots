@@ -11,7 +11,7 @@ const exploreEntries = [
     type: "Product",
     title: "MQCD: My Qur'an Companion Device",
     body: "A screen-light Qur'an companion designed to support listening, repetition, memorization, and beneficial audio in the home.",
-    href: "/tools/quran-companion-device",
+    href: "/explore/mqcd",
     image: "/mqcd-device.png",
     cta: "View MQCD",
     icon: Package,

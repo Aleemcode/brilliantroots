@@ -6,72 +6,12 @@ export type PathwaySlug =
   | "adab-and-character"
   | "screen-free-learning";
 
-export type ToolSlug =
-  | "baytul-asmaa"
-  | "quran-companion-device"
-  | "tarbiyah-corner-library";
-
 export const mainNav = [
   { label: "Home", href: "/" },
   { label: "Explore", href: "/explore" },
   { label: "Pathway", href: "/pathways" },
   { label: "About Us", href: "/about" },
   { label: "Contact Us", href: "/contact" },
-];
-
-export const intentionSteps = [
-  {
-    label: "Intend",
-    title: "Clarify the purpose",
-    body: "Name what you are trying to nurture before choosing content, tools, or routines.",
-  },
-  {
-    label: "Understand",
-    title: "Learn the principle",
-    body: "Give the parent enough grounding to make a deliberate household choice.",
-  },
-  {
-    label: "Practice",
-    title: "Bring it home",
-    body: "Turn the idea into one repeatable action, conversation, or weekly rhythm.",
-  },
-  {
-    label: "Equip",
-    title: "Choose the right support",
-    body: "Use a tool only when it serves the intention and fits the child or family stage.",
-  },
-  {
-    label: "Continue",
-    title: "Return with support",
-    body: "Keep the work alive through reminders, community, digest, and next steps.",
-  },
-];
-
-export const startPaths = [
-  {
-    title: "I need foundations",
-    href: "/pathways/foundations",
-    body: "For parents who want clarity before adding more Islamic content or products.",
-    firstStep: "Read the method, choose one tarbiyah concern, and begin with a parent reflection.",
-  },
-  {
-    title: "I need family rhythm",
-    href: "/pathways/family-rhythm",
-    body: "For homes where good intentions exist, but consistency keeps slipping.",
-    firstStep: "Choose one anchor habit for the week and connect it to a simple family prompt.",
-  },
-  {
-    title: "I need child-ready tools",
-    href: "/explore",
-    body: "For parents ready to choose a product, but wanting it tied to a known purpose.",
-    firstStep: "Start with Explore, then open the pathway connected to that product, tool, or work.",
-  },
-  {
-    title: "I need screen/device guidance",
-    href: "/pathways/screen-free-learning",
-    body: "For families trying to support learning while protecting attention and routine.",
-    firstStep: "Decide what the device should replace, support, and never become.",
-  },
 ];
 
 export const pathways = [
@@ -83,11 +23,11 @@ export const pathways = [
     problem: "A parent can care deeply about Islam in the home and still feel scattered, reactive, or unsure where to begin.",
     principle: "Tarbiyah begins with the parent as the root: intention, understanding, practice, and consistency before performance.",
     practice: "Set aside one weekly reflection: what am I trying to nurture in my home this week, and what small action will show it?",
-    tool: "Start with the method page and the Jumu'ah Digest before choosing a product.",
+    tool: "Start with Pathway reading and the Jumu'ah Digest before choosing a product.",
     href: "/pathways/foundations",
-    recommendedToolHref: "/library/method",
-    recommendedTool: "The brilliantroots Method",
-    nextStepHref: "/library/jumuah-digest",
+    recommendedToolHref: "/explore/jumuah-digest",
+    recommendedTool: "Jumu'ah Digest",
+    nextStepHref: "/explore/jumuah-digest",
     nextStep: "Join the weekly digest",
   },
   {
@@ -100,9 +40,9 @@ export const pathways = [
     practice: "Choose one anchor: after Maghrib, Friday morning, bedtime, or weekend breakfast. Attach one reminder or conversation to it.",
     tool: "Use routines, prompts, and parent notes before adding more material.",
     href: "/pathways/family-rhythm",
-    recommendedToolHref: "/library",
+    recommendedToolHref: "/explore/jumuah-digest",
     recommendedTool: "Family routines",
-    nextStepHref: "/library/jumuah-digest",
+    nextStepHref: "/explore/jumuah-digest",
     nextStep: "Practice this week",
   },
   {
@@ -130,9 +70,9 @@ export const pathways = [
     practice: "Choose one surah, one listening time, and one parent check-in each week.",
     tool: "My Qur'an Companion Device supports screen-light listening rhythms.",
     href: "/pathways/quran-companion",
-    recommendedToolHref: "/tools/quran-companion-device",
+    recommendedToolHref: "/explore/mqcd",
     recommendedTool: "Qur'an Companion Device",
-    nextStepHref: "/tools/quran-companion-device",
+    nextStepHref: "/explore/mqcd",
     nextStep: "See product context",
   },
   {
@@ -145,9 +85,9 @@ export const pathways = [
     practice: "Choose one phrase or adab focus for the week, then notice and name it when it appears.",
     tool: "Tarbiyah Corner can carry parent notes, stories, and prompts for recurring character work.",
     href: "/pathways/adab-and-character",
-    recommendedToolHref: "/tools/tarbiyah-corner-library",
-    recommendedTool: "Tarbiyah Corner Library",
-    nextStepHref: "/library",
+    recommendedToolHref: "/explore/intentional-muslim-home",
+    recommendedTool: "Parent guidance works",
+    nextStepHref: "/explore#published-works",
     nextStep: "Browse parent guides",
   },
   {
@@ -160,7 +100,7 @@ export const pathways = [
     practice: "Define one screen-free learning window and prepare the physical or audio material before it begins.",
     tool: "Use devices and printables only where they protect attention and support practice.",
     href: "/pathways/screen-free-learning",
-    recommendedToolHref: "/tools/quran-companion-device",
+    recommendedToolHref: "/explore/mqcd",
     recommendedTool: "Qur'an Companion Device",
     nextStepHref: "/explore",
     nextStep: "Explore fitting support",
@@ -179,62 +119,4 @@ export const pathways = [
   recommendedTool: string;
   nextStepHref: string;
   nextStep: string;
-}>;
-
-export const tools = [
-  {
-    slug: "baytul-asmaa",
-    title: "Baytul Asmaa",
-    subtitle: "Names & Identity Tool",
-    purpose: "Help expecting and new parents choose names with meaning, confidence, pronunciation, and family reflection.",
-    bestFor: "Expecting parents, new parents, and families revisiting identity conversations.",
-    websiteHref: "https://baytul-asmaa.com/",
-    pathwayHref: "/pathways/names-and-identity",
-    pathway: "Names & Identity Pathway",
-    details: [
-      "Search and reflect through meaning, story, and pronunciation.",
-      "Move from a beautiful name to an intentional family decision.",
-      "Keep the naming process connected to dua, identity, and belonging.",
-    ],
-  },
-  {
-    slug: "quran-companion-device",
-    title: "My Qur'an Companion Device",
-    subtitle: "Screen-Light Qur'an Support",
-    purpose: "Support listening, repetition, and memorization rhythms without turning Qur'an practice into more screen time.",
-    bestFor: "Young children, memorization support, bedtime listening, and family review routines.",
-    websiteHref: "",
-    pathwayHref: "/pathways/quran-companion",
-    pathway: "Qur'an Companion Pathway",
-    details: [
-      "Designed around attention, repetition, and household rhythm.",
-      "Helps parents make Qur'an listening easier without surrendering the environment to screens.",
-      "Pairs with a weekly listening plan and parent check-in.",
-    ],
-  },
-  {
-    slug: "tarbiyah-corner-library",
-    title: "Tarbiyah Corner Library",
-    subtitle: "Parent Guidance & Family Prompts",
-    purpose: "Give parents grounded notes, prompts, and practical teaching support for recurring tarbiyah themes.",
-    bestFor: "Parents who want a calmer way to teach foundations, adab, and family practice.",
-    websiteHref: "",
-    pathwayHref: "/pathways/foundations",
-    pathway: "Foundations Pathway",
-    details: [
-      "Organizes parent-facing notes and child-facing prompts in one place.",
-      "Works as a companion for foundations, family rhythm, and adab conversations.",
-      "Keeps the parent from improvising every Islamic teaching moment from scratch.",
-    ],
-  },
-] satisfies Array<{
-  slug: ToolSlug;
-  title: string;
-  subtitle: string;
-  purpose: string;
-  bestFor: string;
-  websiteHref: string;
-  pathwayHref: string;
-  pathway: string;
-  details: string[];
 }>;

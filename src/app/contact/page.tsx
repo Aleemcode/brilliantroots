@@ -1,41 +1,60 @@
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { SiteFrame } from "@/components/site-frame";
-import { DetailPanel, CTASection } from "@/components/page/cards";
-import { PageHero } from "@/components/page/page-hero";
+import { Button } from "@/components/ui/button";
+
+const routes = [
+  ["Product Questions", "Ask about fit, availability, preorder, age/stage, or how a product should be used at home."],
+  ["Publishing Inquiries", "Ask about published works, author submissions, collaboration, or distribution."],
+  ["Parent Support", "Ask about Pathway guides, family clarity, or which support may fit your current season."],
+  ["General Questions", "Reach out for anything else connected to brilliantroots."],
+];
 
 export default function ContactPage() {
   return (
     <SiteFrame>
-      <PageHero
-        eyebrow="CONTACT"
-        title="Ask a clearer question. Get routed to the right support."
-        body="Contact should handle product questions, pathway guidance, community inquiries, wholesale/publishing questions, and general support without making every visitor guess where to go."
-        primary={{ label: "Start here instead", href: "/start-here" }}
-        secondary={{ label: "About brilliantroots", href: "/about" }}
-      />
-
-      <section className="bg-br-surface py-16 md:py-24">
-        <div className="mx-auto grid max-w-7xl gap-6 px-6 sm:px-8 md:grid-cols-2 lg:px-12">
-          <DetailPanel title="Product questions">
-            <p>For fit, availability, usage, age/stage, and which pathway a tool belongs to.</p>
-          </DetailPanel>
-          <DetailPanel title="Pathway guidance">
-            <p>For parents who know something needs attention, but do not yet know where to begin.</p>
-          </DetailPanel>
-          <DetailPanel title="Community">
-            <p>For continuity, reminders, etiquette, and joining future parent support spaces.</p>
-          </DetailPanel>
-          <DetailPanel title="Partnerships">
-            <p>For wholesale, school, publishing, author, or broader ecosystem conversations.</p>
-          </DetailPanel>
+      <section className="px-6 pb-16 pt-28 sm:px-8 md:pb-24 md:pt-36 lg:px-12">
+        <div className="mx-auto max-w-7xl border-y editorial-rule py-10">
+          <p className="font-mono text-xs uppercase tracking-[0.18em] text-br-primary">Contact Us</p>
+          <h1 className="mt-6 max-w-5xl text-[3rem] font-bold leading-[1.02] tracking-[-0.04em] text-br-text md:text-[5.5rem]">
+            Ask the right question. We will route it with care.
+          </h1>
+          <p className="mt-7 max-w-3xl text-lg leading-relaxed text-br-muted">
+            Use this page for product questions, publishing inquiries, author submissions, parent support, and general questions.
+          </p>
         </div>
       </section>
 
-      <CTASection
-        title="Most visitors should not need contact first."
-        body="A strong IA answers the common questions through Start Here, Pathways, Tools, Library, and About."
-        href="/pathways"
-        label="Explore pathways"
-      />
+      <section className="px-6 py-20 sm:px-8 md:py-28 lg:px-12">
+        <div className="mx-auto grid max-w-7xl gap-5 md:grid-cols-2">
+          {routes.map(([title, body], index) => (
+            <div key={title} className="paper-panel rounded-[18px] p-7">
+              <p className="font-mono text-xs uppercase tracking-[0.18em] text-br-primary">
+                {String(index + 1).padStart(2, "0")}
+              </p>
+              <h2 className="mt-5 text-3xl font-semibold tracking-tight text-br-text">{title}</h2>
+              <p className="mt-4 text-sm leading-relaxed text-br-muted">{body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="px-6 py-20 sm:px-8 md:py-28 lg:px-12">
+        <div className="paper-panel mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 rounded-[22px] p-8 md:flex-row md:items-center md:p-10">
+          <div className="max-w-2xl">
+            <p className="font-mono text-xs uppercase tracking-[0.18em] text-br-primary">Next</p>
+            <h2 className="mt-4 text-4xl font-bold leading-tight tracking-[-0.035em] text-br-text">
+              Most visitors should find clarity before contacting us.
+            </h2>
+          </div>
+          <Button asChild size="lg">
+            <Link href="/explore">
+              Browse Explore
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </Button>
+        </div>
+      </section>
     </SiteFrame>
   );
 }

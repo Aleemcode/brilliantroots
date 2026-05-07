@@ -1,50 +1,53 @@
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { SiteFrame } from "@/components/site-frame";
-import { CTASection, RouteCard } from "@/components/page/cards";
-import { IntentionalityStrip } from "@/components/page/intentionality-strip";
-import { PageHero } from "@/components/page/page-hero";
+import { Button } from "@/components/ui/button";
 import { pathways } from "@/lib/site-content";
 
 export default function PathwaysPage() {
   return (
     <SiteFrame>
-      <PageHero
-        eyebrow="PATHWAYS"
-        title="Intentional tarbiyah needs a sequence."
-        body="Pathways are the signature structure of brilliantroots: a parent intention translated into understanding, household practice, tools, and continuity."
-        primary={{ label: "Start with foundations", href: "/pathways/foundations" }}
-        secondary={{ label: "Use Start Here", href: "/start-here" }}
-      />
-
-      <IntentionalityStrip />
-
-      <section className="bg-br-surface py-16 md:py-24">
-        <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
-          <div className="mb-10 max-w-3xl">
-            <p className="font-mono text-sm text-br-primary">CHOOSE A PATHWAY</p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-br-text md:text-5xl">
-              Each route starts with an intention, then gives the family a next practice.
-            </h2>
-          </div>
-          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {pathways.map((pathway) => (
-              <RouteCard
-                key={pathway.slug}
-                title={pathway.shortTitle}
-                body={pathway.intent}
-                href={pathway.href}
-                label="Open pathway"
-              />
-            ))}
+      <section className="px-6 pb-16 pt-28 sm:px-8 md:pb-24 md:pt-36 lg:px-12">
+        <div className="mx-auto max-w-7xl border-y editorial-rule py-10">
+          <p className="font-mono text-xs uppercase tracking-[0.18em] text-br-primary">Pathway</p>
+          <h1 className="mt-6 max-w-5xl text-[3rem] font-bold leading-[1.02] tracking-[-0.04em] text-br-text md:text-[5.5rem]">
+            Guidance for the home you are preparing, building, or strengthening.
+          </h1>
+          <p className="mt-7 max-w-3xl text-lg leading-relaxed text-br-muted">
+            Pathway is a content hub for prospective spouses, parents, and families who want clarity in faith, family life, learning, adab, and growth in eeman before choosing routines, products, and resources.
+          </p>
+          <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+            <Button asChild size="lg">
+              <Link href="#guides">Read the Guides</Link>
+            </Button>
+            <Button asChild variant="secondary" size="lg" className="bg-br-surface/40">
+              <Link href="/explore">Explore Related Support</Link>
+            </Button>
           </div>
         </div>
       </section>
 
-      <CTASection
-        title="Explore comes after the pathway."
-        body="This keeps brilliantroots from feeling like a shop first. The parent understands the purpose before choosing a product, tool, work, or guide."
-        href="/explore"
-        label="Open Explore"
-      />
+      <section id="guides" className="px-6 py-20 sm:px-8 md:py-28 lg:px-12">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {pathways.map((pathway) => (
+              <Link
+                key={pathway.slug}
+                href={pathway.href}
+                className="paper-panel group flex min-h-full flex-col rounded-[18px] p-6"
+              >
+                <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-br-primary">{pathway.shortTitle}</p>
+                <h2 className="mt-5 text-3xl font-semibold leading-tight tracking-tight text-br-text">{pathway.title}</h2>
+                <p className="mt-4 flex-1 text-sm leading-relaxed text-br-muted">{pathway.intent}</p>
+                <span className="mt-8 flex items-center justify-between border-t editorial-rule pt-4 text-sm font-semibold text-br-primary">
+                  Read guide
+                  <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
     </SiteFrame>
   );
 }
